@@ -1,6 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import  insta  from '../../assets/images/insta.svg';
+import Image from "next/image";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +26,7 @@ function Navbar() {
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <h1 className="text-2xl text-slate-700">LogoBastien</h1>
+        <Image src={insta} alt="Logo" className="w-12 h-12 fill-red-200 text-red-200" />
 
         {/* Botón de menú hamburguesa */}
         <button
@@ -34,21 +36,23 @@ function Navbar() {
           {isOpen ? (
             <X size={30} className="text-slate-900" />
           ) : (
-            <Menu size={30} />
+            <Menu size={30} className="text-slate-100" />
           )}
         </button>
 
         {/* Menú de navegación (escritorio) */}
-        <div className="hidden md:flex space-x-6 text-xl text-slate-700">
+        <div className="hidden md:flex space-x-6 text-xl text-slate-200">
           <a href="#" className="hover:text-indigo-500">
             About Me
           </a>
           <a href="#" className="hover:text-indigo-500">
             Contact
           </a>
-          <a href="#" className="hover:text-indigo-500">
-            LogoInsta
-          </a>
+          <Image
+            src={insta}
+            alt="Logo"
+            className="w-8 h-8 text-slate-200 fill-red-900"
+          />
         </div>
       </div>
 

@@ -1,6 +1,6 @@
-"use client"
+"use client";
 import Image from "next/image";
-import hero1 from "../../assets/images/hero1.jpg"
+import hero1 from "../../assets/images/hero1.jpg";
 
 function Hero() {
   return (
@@ -10,13 +10,13 @@ function Hero() {
         width={1920}
         height={1080}
         alt={"Bastien Bonilla"}
-         // Hace que la imagen cubra el contenedor
-        objectFit="cover" // Ajusta la imagen sin deformarla
-        objectPosition="center" // Centra la imagen
-        priority //
+        objectFit="cover"
+        objectPosition="center"
+        priority
+        className="md:-mt-20"
       />
     </div>
   );
 }
 
-export default Hero
+export default Hero;
