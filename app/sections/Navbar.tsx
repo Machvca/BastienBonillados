@@ -26,7 +26,13 @@ function Navbar() {
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <Image src={insta} alt="Logo" className="w-12 h-12 fill-red-200 text-red-200" />
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image src={insta} alt="Logo" className="w-12 h-12 cursor-pointer" />
+        </a>
 
         {/* Botón de menú hamburguesa */}
         <button
@@ -48,11 +54,19 @@ function Navbar() {
           <a href="#" className="hover:text-indigo-500">
             Contact
           </a>
+
+            <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-indigo-500">
+
           <Image
             src={insta}
             alt="Logo"
-            className="w-8 h-8 text-slate-200 fill-red-900"
-          />
+            className="w-8 h-8 text-slate-200 "
+            />
+            </a>
         </div>
       </div>
 
@@ -78,7 +92,9 @@ function Navbar() {
             Contact
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-indigo-900"
             onClick={() => setIsOpen(false)}
           >
