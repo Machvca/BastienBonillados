@@ -27,7 +27,7 @@ function Navbar() {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <a
-          href="https://www.instagram.com/bastienbonilla/"
+          href="https://www.instagram.com/thetintinmickey/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -56,7 +56,7 @@ function Navbar() {
           </a>
 
           <a
-            href="https://www.instagram.com/bastienbonilla/"
+            href="https://www.instagram.com/thetintinmickey/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-indigo-500 cursor-pointer"
@@ -88,7 +88,7 @@ function Navbar() {
             Contact
           </a>
           <a
-            href="https://www.instagram.com/bastienbonilla/"
+            href="https://www.instagram.com/thetintinmickey/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-indigo-900"
