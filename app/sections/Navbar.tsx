@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import  insta  from '../../assets/images/insta.svg';
+import logotintin from "../../assets/images/logotintin.png";
 import Image from "next/image";
 
 function Navbar() {
@@ -31,7 +32,7 @@ function Navbar() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image src={insta} alt="Logo" className="w-12 h-12 cursor-pointer" />
+          <Image src={logotintin} alt="Logo" className="w-8 h-12 cursor-pointer" />
         </a>
 
         {/* Botón de menú hamburguesa */}
