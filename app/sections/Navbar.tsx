@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import  insta  from '../../assets/images/insta.svg';
+import Insta from "../../app/components/Insta";
 import logotintin from "../../assets/images/logotintin.png";
 import Image from "next/image";
 
@@ -21,23 +21,23 @@ function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-30 text-black transition-colors duration-600 ${
+      className={`fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-[#5d0f0f] to-neutral-100 bg-clip-text transition-colors duration-600 ${
         isScrolled ? "bg-slate-900/20 shadow-md" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <a
-          href="https://www.instagram.com/thetintinmickey/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image src={logotintin} alt="Logo" className="w-8 h-12 cursor-pointer" />
+        <a href="#">
+          <Image
+            src={logotintin}
+            alt="Logo"
+            className="w-8 h-12 cursor-pointer"
+          />
         </a>
 
         {/* Botón de menú hamburguesa */}
         <button
-          className="md:hidden z-30 fixed top-4 right-4"
+          className="md:hidden z-50 fixed top-4 right-4"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
@@ -48,11 +48,17 @@ function Navbar() {
         </button>
 
         {/* Menú de navegación (escritorio) */}
-        <div className="hidden md:flex space-x-6 text-xl text-slate-200">
-          <a href="#" className="hover:text-indigo-500">
+        <div className="hidden md:flex space-x-6 text-xl ">
+          <a
+            href="#"
+            className="bg-gradient-to-b from-[#5d0f0f] to-neutral-100 bg-clip-text hover:text-slate-300 text-transparent"
+          >
             About Me
           </a>
-          <a href="#" className="hover:text-indigo-500">
+          <a
+            href="#"
+            className="bg-gradient-to-b from-[#5d0f0f] to-neutral-100 bg-clip-text hover:text-slate-950 text-transparent"
+          >
             Contact
           </a>
 
@@ -60,9 +66,15 @@ function Navbar() {
             href="https://www.instagram.com/thetintinmickey/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-indigo-500 cursor-pointer"
+            className="hover:text-slate-700 cursor-pointer"
           >
-            <Image src={insta} alt="Logo" className="w-8 h-8 text-slate-200 " />
+            {/* <Image
+              src={instagram}
+              alt="Logo"
+              className="w-8 h-8  bg-red-900 text-red-600"
+            /> */}
+
+            <Insta stroke="red" fill="none" />
           </a>
         </div>
       </div>
