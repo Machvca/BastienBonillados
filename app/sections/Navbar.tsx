@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import Insta from "../../app/components/Insta";
-import logotintin from "../../assets/images/logotintin.png";
+import logoBastien from "../../assets/images/logoBastien.png";
 import Image from "next/image";
 
 function Navbar() {
@@ -29,9 +29,9 @@ function Navbar() {
         {/* Logo */}
         <a href="#">
           <Image
-            src={logotintin}
+            src={logoBastien}
             alt="Logo"
-            className="w-8 h-12 cursor-pointer"
+            className="w-14 h-16 cursor-pointer"
           />
         </a>
 
@@ -41,9 +41,9 @@ function Navbar() {
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
-            <X size={30} className="text-slate-900" />
+            <X size={30} className="text-[#5d0f0f]" />
           ) : (
-            <Menu size={30} className="text-slate-100" />
+            <Menu size={30} className="text-[#5d0f0f]" />
           )}
         </button>
 
@@ -68,13 +68,7 @@ function Navbar() {
             rel="noopener noreferrer"
             className="hover:text-slate-700 cursor-pointer"
           >
-            {/* <Image
-              src={instagram}
-              alt="Logo"
-              className="w-8 h-8  bg-red-900 text-red-600"
-            /> */}
-
-            <Insta stroke="red" fill="none" />
+            <Insta stroke="none" fill="#5d0f0f" />
           </a>
         </div>
       </div>
