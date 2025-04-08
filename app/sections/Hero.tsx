@@ -5,7 +5,7 @@ import hero1 from "../../assets/images/hero1.jpg";
 
 function Hero() {
   return (
-    <div className="relative h-[55rem] w-full overflow-hidden mb-24">
+    <div className="relative h-[55rem] w-full overflow-hidden ">
       {/* Fondo de cuadrícula */}
       <div
         className={cn(
@@ -35,7 +35,9 @@ function Hero() {
         </div>
 
         {/* Imagen */}
-        <div className="flex justify-center md:justify-end">
+        <div
+          className="flex justify-center md:justify-end  p-1.5 "
+        >
           <Image
             src={hero1}
             width={500}
