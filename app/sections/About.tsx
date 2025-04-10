@@ -2,69 +2,82 @@ import Image from "next/image";
 import hero2 from "../../assets/images/hero2.jpg";
 import hero3 from "../../assets/images/hero3.jpg";
 import hero4 from "../../assets/images/hero4.jpg";
-
+import about4 from "../../assets/images/about4.jpg";
 
 function About() {
   return (
-    <div className="space-y-0">
-      {/* Primera sección */}
-      <div className="grid grid-cols-4 grid-rows-5 gap-0 w-screen h-88 bg-red-900">
-        {/* Contenedor del párrafo */}
-        <div className="col-span-2 row-span-5 flex justify-center items-center">
-          <div className="flex flex-col justify-center items-center">
-            <h1 className="text-xl text-slate-200">Meet Bastien Bonilla</h1>
-            <p className="text-slate-100 text-left p-4 text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-            </p>
-          </div>
-        </div>
-
-        {/* Contenedor de la imagen con efecto hover */}
-        <div className="col-span-2 row-span-5 col-start-3 bg-red-900">
-          <Image
-            src={hero2}
-            alt="Bastien Bonilla"
-            width={200}
-            height={200}
-            className="w-full h-full object-cover transition duration-300 ease-in-out group-hover:brightness-50"
-            priority
-          />
-        </div>
-      </div>
-
-      {/* Segunda sección */}
-      <div className="grid grid-cols-4 grid-rows-5 gap-0 w-screen h-88 bg-red-700">
-        {/* Imagen 1 con efecto hover */}
-        <div className="col-span-2 row-span-5 bg-red-700 relative group">
-          <Image
-            src={hero3}
-            alt="Bastien Bonilla"
-            width={200}
-            height={200}
-            className="w-full h-full object-cover transition duration-300 ease-in-out group-hover:brightness-50 group-focus:brightness-50"
-            priority
-          />
-          <button className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition duration-300">
-            vaffanculo
+    <>
+      <div className="w-full h-screen antialiased flex flex-row p-12 space-x-24 bg-amber-400">
+        {/* Primera tarjeta con fondo */}
+        <div
+          className="flex flex-col items-center justify-center rounded-2xl border border-amber-950 px-12 w-full h-full bg-cover bg-center text-slate-200"
+          style={{ backgroundImage: `url(${hero2.src})` }}
+        >
+          <h1 className="text-3xl font-bold mb-4">
+            THINK LIKE A MAGICIAN™ KEYNOTES
+          </h1>
+          <p className="mb-4 text-center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perferendis, unde itaque quia id doloremque accusamus...
+          </p>
+          <button className="bg-white text-black px-4 py-2 rounded">
+            Learn More
           </button>
         </div>
 
-        {/* Imagen 2 con efecto hover */}
-        <div className="col-span-2 row-span-5 col-start-3 bg-red-900 relative group">
-          <Image
-            src={hero4}
-            alt="Bastien Bonilla"
-            width={200}
-            height={200}
-            className="w-full h-full object-cover transition duration-300 ease-in-out group-hover:brightness-50 group-focus:brightness-50"
-            priority
-          />
-          <button className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition duration-300">
-            vaffanculo tu
+        {/* Segunda tarjeta con fondo */}
+        <div
+          className="flex flex-col items-center justify-center rounded-2xl border px-12 w-full h-full bg-cover bg-center text-white"
+          style={{ backgroundImage: `url(${hero3.src})` }}
+        >
+          <h1 className="text-3xl font-bold mb-4">CORPORATE MAGIC SHOWS</h1>
+          <p className="mb-4 text-center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perferendis, unde itaque quia id doloremque accusamus...
+          </p>
+          <button className="bg-white text-black px-4 py-2 rounded">
+            Learn More
+          </button>
+        </div>
+
+        {/* Tercera tarjeta con fondo */}
+        <div
+          className="flex flex-col items-center justify-center rounded-2xl border px-12 w-full h-full bg-cover bg-center text-white"
+          style={{ backgroundImage: `url(${hero4.src})` }}
+        >
+          <h1 className="text-3xl font-bold mb-4">VIRTUAL MAGIC EXPERIENCES</h1>
+          <p className="mb-4 text-center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perferendis, unde itaque quia id doloremque accusamus...
+          </p>
+          <button className="bg-white text-black px-4 py-2 rounded">
+            Learn More
           </button>
         </div>
       </div>
-    </div>
+
+      <div className="relative w-full h-screen">
+        {/* Imagen de fondo */}
+        <Image
+          src={about4}
+          alt="Bastien Bonilla"
+          fill
+          className="object-cover w-full h-full"
+          priority
+        />
+
+        {/* Texto encima */}
+        <div className="absolute top-0 left-0 p-12 text-right text-white bg-black/20 ml-12 mt-12">
+          <h1 className="text-7xl font-bold">Don pendejo</h1>
+          <p className="mt-4 max-w-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+            voluptas aut. Explicabo voluptatibus corporis exercitationem. Cumque
+            error unde quae dignissimos, repudiandae neque reiciendis totam
+            aliquam ab tenetur, numquam officiis doloribus?
+          </p>
+        </div>
+      </div>
+    </>
   );
 }
 

@@ -1,11 +1,22 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
 import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
 
 export function Reviews() {
   return (
-    <div className="h-[25rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden ">
+    <div className="h-[50rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden bg-red-900  pt-24 ">
+      <h1 className="text-3xl text-slate-900 font-bold  flex justify-center items-center  -mt-60 mb-16 ">
+        YOUR COMPANY IS IN GOOD COMPANY
+      </h1>
+      <div className="bg-blue-500 w-2/3 h-32 mb-12 flex flex-row justify-between items-center rounded-md px-12">
+        {/* iconos de las empresas */}
+        <h1>hola</h1>
+        <h1>como estas?</h1>
+        <h1>bien y tu?</h1>
+        <h1>bien y tu?</h1>
+        <h1>bien y tu?</h1>
+      </div>
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
@@ -34,6 +45,7 @@ const testimonials = [
     title: "A Dream Within a Dream",
   },
   {
+    
     quote:
       "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
     name: "Jane Austen",

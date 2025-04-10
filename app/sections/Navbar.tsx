@@ -55,12 +55,12 @@ function Navbar() {
           >
             About Me
           </a>
-          <a
-            href="#"
-            className="bg-gradient-to-b from-[#5d0f0f] to-neutral-100 bg-clip-text hover:text-slate-950 text-transparent"
-          >
-            Contact
-          </a>
+          <button className="relative -mt-2 inline-flex h-10  overflow-hidden rounded-full items-center focus:outline-none focus:ring-2 focus:ring-slate-300 focus:ring-offset-2 focus:ring-offset-slate-50">
+            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#5d0f0f_0%,#f4f4ff_40%,#fbf7ff_100%)]" />
+            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-transparent px-3 py-1 text-lg font-medium text-[#5d0f0f] backdrop-blur-3xl">
+              Contact
+            </span>
+          </button>
 
           <a
             href="https://www.instagram.com/thetintinmickey/"
