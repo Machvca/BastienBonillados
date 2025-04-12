@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import { Archivo } from "next/font/google";
+import { Archivo} from "next/font/google";
+import {  Syne } from "next/font/google";
+import { Rubik } from "next/font/google";
 import "./globals.css";
 
 import Footer from "./sections/Footer";
@@ -10,6 +12,20 @@ const archivo = Archivo({
   weight: "variable",
   subsets: ["latin"],
   variable: "--font-archivo",
+});
+
+const syne = Syne({
+  display: "swap",
+  weight: "variable",
+  subsets: ["latin"],
+  variable: "--font-syne",
+});
+
+const rubik = Rubik({
+  display: "swap",
+  weight: "variable",
+  subsets: ["latin"],
+  variable: "--font-rubik",
 });
 
 export const metadata: Metadata = {
@@ -23,11 +39,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <body
-        className={`${archivo.variable} antialiased font-archivo flex flex-col min-h-screen`}
+        className= {`${syne.variable} font-syne antialiased flex flex-col min-h-screen`}
       >
-        <Navbar />
+        <Navbar  />
         <main className="flex-grow">{children}</main>
         <Footer />
       </body>

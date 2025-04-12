@@ -5,17 +5,17 @@ import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
 
 export function Reviews() {
   return (
-    <div className="h-[50rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden bg-red-900  pt-24 ">
-      <h1 className="text-3xl text-slate-900 font-bold  flex justify-center items-center  -mt-60 mb-16 ">
+    <div className="h-[50rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden bg-transparent  pt-24 ">
+      <h1 className="text-3xl text-slate-200 font-bold  flex justify-center items-center  -mt-60 mb-16 ">
         YOUR COMPANY IS IN GOOD COMPANY
       </h1>
-      <div className="bg-blue-500 w-2/3 h-32 mb-12 flex flex-row justify-between items-center rounded-md px-12">
+      <div className="bg-slate-100 w-2/3 h-32 mb-12 flex flex-row justify-between items-center rounded-md px-12">
         {/* iconos de las empresas */}
-        <h1>hola</h1>
-        <h1>como estas?</h1>
-        <h1>bien y tu?</h1>
-        <h1>bien y tu?</h1>
-        <h1>bien y tu?</h1>
+        <h1>logoempresa1</h1>
+        <h1>logoempresa2</h1>
+        <h1>logoempresa3</h1>
+        <h1>logoempresa4</h1>
+        <h1>logoempresa5</h1>
       </div>
       <InfiniteMovingCards
         items={testimonials}

@@ -3,6 +3,9 @@
 @theme inline {
   --animate-scroll: scroll var(--animation-duration, 40s)
     var(--animation-direction, forwards) linear infinite;
+    --font-archivo: var(--font-archivo);
+    --font-syne: var(--font-syne);
+    --font-rubik: var(--font-rubik);
 
   @keyframes scroll {
     to {
