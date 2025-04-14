@@ -32,7 +32,7 @@ function Hero() {
         </div>
 
         {/* Imagen */}
-        <div className="flex justify-center md:justify-end mx-6 mask mask-star-2 overflow-hidden">
+        <div className="flex justify-center md:justify-end mx-6 mask mask-squircle overflow-hidden">
           <Image
             src={hero1}
             width={500}

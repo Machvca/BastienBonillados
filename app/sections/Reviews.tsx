@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+import hpLogo from "../../assets/images/hpLogo.png";
 // import React, { useEffect, useState } from "react";
 import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
 
@@ -11,11 +13,46 @@ export function Reviews() {
       </h1>
       <div className="bg-transparent  h-32 md:mb-12 w-full flex flex-row justify-evenly items-center rounded-md  md:mx-8 text-stone-300">
         {/* iconos de las empresas */}
-        <h1>logoempresa1</h1>
-        <h1>logoempresa2</h1>
-        <h1>logoempresa3</h1>
-        <h1>logoempresa4</h1>
-        <h1>logoempresa5</h1>
+        <Image
+          src={hpLogo}
+          width={50}
+          height={50}
+          alt={"Tintin the Magician"}
+          className="rounded-2xl object-cover "
+          priority
+        />
+        <Image
+          src={hpLogo}
+          width={50}
+          height={50}
+          alt={"Tintin the Magician"}
+          className="rounded-2xl object-cover "
+          priority
+        />
+        <Image
+          src={hpLogo}
+          width={50}
+          height={50}
+          alt={"Tintin the Magician"}
+          className="rounded-2xl object-cover "
+          priority
+        />
+        <Image
+          src={hpLogo}
+          width={50}
+          height={50}
+          alt={"Tintin the Magician"}
+          className="rounded-2xl object-cover "
+          priority
+        />
+        <Image
+          src={hpLogo}
+          width={50}
+          height={50}
+          alt={"Tintin the Magician"}
+          className="rounded-2xl object-cover "
+          priority
+        />
       </div>
       <InfiniteMovingCards
         items={testimonials}

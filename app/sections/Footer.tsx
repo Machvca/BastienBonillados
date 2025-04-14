@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className=" bottom-0 w-ful p-4 text-slate-900 text-center bg-transparent mt-auto backdrop-blur-md text-sm  ">
+    <footer className=" bottom-0 w-ful p-4 text-slate-900 text-center bg-[#1a1a2e] mt-auto backdrop-blur-md   ">
       <div className="grid grid-cols-3 items-center justify-items-center mx-144">
         <a
           href="https://www.instagram.com/thetintinmickey/"
@@ -12,9 +12,9 @@ export default function Footer() {
           rel="noopener noreferrer"
           className="hover:text-slate-700 cursor-pointer"
         >
-          <Insta stroke="none" fill="#432259" />
+          <Insta stroke="none" fill="#e7e5e4" />
         </a>
-        <h1>
+        <h1 className="text-sm text-[#e7e5e4]">
           © {new Date().getFullYear()} Bastien Bonilla All rights reserved.
         </h1>
         <a href="#">
