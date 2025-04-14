@@ -7,10 +7,10 @@ import about4 from "../../assets/images/about4.jpg";
 function About() {
   return (
     <>
-      <div className="w-full h-screen antialiased flex flex-row p-12 space-x-24 bg-slate-100">
+      <div className="w-full h-screen antialiased flex flex-row p-12 space-x-24 ">
         {/* Primera tarjeta con fondo */}
         <div
-          className="flex flex-col items-center justify-center rounded-2xl border border-amber-950 px-12 w-full h-full bg-cover bg-center text-slate-200"
+          className="flex flex-col items-center justify-center rounded-2xl border border-amber-100 px-12 w-full h-full bg-cover bg-center text-slate-200"
           style={{ backgroundImage: `url(${hero2.src})` }}
         >
           <h1 className="text-3xl font-bold mb-4">

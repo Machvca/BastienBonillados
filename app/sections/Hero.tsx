@@ -7,7 +7,7 @@ import { Spoiler } from "spoiled"
 
 function Hero() {
   return (
-    <div className="relative h-full w-full overflow-hidden bg-gradient-to-br from-[#0d0d0d] via-[#1a1a2e] to-[#3a0ca3]/80 ">
+    <div className="relative h-full w-full overflow-hidden bg-gradient-to-br from-[#0d0d0d] via-[#1a1a2e] to-[#3a0ca3]/20 ">
       {/* Fondo de cuadrícula */}
       {/* <div
         className={cn(
