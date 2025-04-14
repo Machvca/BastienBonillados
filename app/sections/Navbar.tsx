@@ -31,7 +31,7 @@ function Navbar() {
           <Image
             src={logoBastien}
             alt="Logo"
-            className="w-14 h-16 cursor-pointer"
+            className=" w-10 h-12 cursor-pointer"
           />
         </a>
 

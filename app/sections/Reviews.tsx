@@ -5,11 +5,11 @@ import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
 
 export function Reviews() {
   return (
-    <div className="h-[50rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden   pt-24 ">
-      <h1 className="text-3xl text-slate-200 font-bold  flex justify-center items-center  -mt-60 mb-16 ">
+    <div className="h-[50rem] rounded-md flex flex-col antialiased  sm:items-center justify-center relative overflow-hidden pt-24  ">
+      <h1 className="text-xl text-center md:text-3xl text-slate-200 font-bold  flex justify-center items-center  -mt-60 md:mb-16">
         YOUR COMPANY IS IN GOOD COMPANY
       </h1>
-      <div className="bg-transparent w-2/3 h-32 mb-12 flex flex-row justify-between items-center rounded-md px-12 text-stone-300">
+      <div className="bg-transparent  h-32 md:mb-12 w-full flex flex-row justify-evenly items-center rounded-md  md:mx-8 text-stone-300">
         {/* iconos de las empresas */}
         <h1>logoempresa1</h1>
         <h1>logoempresa2</h1>
@@ -21,6 +21,7 @@ export function Reviews() {
         items={testimonials}
         direction="right"
         speed="slow"
+        className="bg-transparent"
       />
     </div>
   );
