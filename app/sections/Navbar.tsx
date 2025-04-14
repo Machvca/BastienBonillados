@@ -68,7 +68,7 @@ function Navbar() {
             rel="noopener noreferrer"
             className="hover:text-slate-700 cursor-pointer"
           >
-            <Insta stroke="none" fill="#432259" />
+            <Insta stroke="none" fill="#bebcc0" />
           </a>
         </div>
       </div>
