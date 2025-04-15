@@ -11,7 +11,7 @@ function Hero() {
         {/* Texto */}
         <div className="text-center md:text-center  ">
           <Spotlight />
-          <h1 className="bg-gradient-to-b from-[#432259] to-stone-300 bg-clip-text py-6 md:pb-10 text-5xl sm:text-6xl md:text-9xl font-bold text-transparent leading-26">
+          <h1 className="bg-gradient-to-b from-[#432259] to-stone-300 bg-clip-text py-6 md:pb-10 text-5xl sm:text-7xl md:text-9xl font-bold text-transparent md:leading-26">
             Tintin the Magician
           </h1>
           <p className="text-sm md:text-xl text-stone-200 ">

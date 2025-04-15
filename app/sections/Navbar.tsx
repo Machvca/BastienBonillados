@@ -4,10 +4,7 @@ import { Menu, X } from "lucide-react";
 import Insta from "../../app/components/Insta";
 import logoBastien from "../../assets/images/logoBastien.png";
 import Image from "next/image";
-import { Spoiler } from "spoiled";
 import { Spotlight } from "../components/ui/spotlight-new";
-
-
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -85,33 +82,31 @@ function Navbar() {
       >
         <Spotlight />
 
-        <Spoiler>
-          <div className="flex flex-col items-center justify-center gap-6 text-8xl sm:px-24">
-            <a
-              href="#"
-              className="hover:text-indigo-900"
-              onClick={() => setIsOpen(false)}
-            >
-              About Me
-            </a>
-            <a
-              href="#"
-              className="hover:text-indigo-900"
-              onClick={() => setIsOpen(false)}
-            >
-              Contact
-            </a>
-            <a
-              href="https://www.instagram.com/thetintinmickey/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-indigo-900"
-              onClick={() => setIsOpen(false)}
-            >
-              Instagram
-            </a>
-          </div>
-        </Spoiler>
+        <div className="flex flex-col items-center justify-center gap-6 text-8xl sm:px-24">
+          <a
+            href="#"
+            className="hover:text-indigo-900"
+            onClick={() => setIsOpen(false)}
+          >
+            About Me
+          </a>
+          <a
+            href="#"
+            className="hover:text-indigo-900"
+            onClick={() => setIsOpen(false)}
+          >
+            Contact
+          </a>
+          <a
+            href="https://www.instagram.com/thetintinmickey/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-indigo-900"
+            onClick={() => setIsOpen(false)}
+          >
+            Instagram
+          </a>
+        </div>
       </div>
     </nav>
   );
