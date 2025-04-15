@@ -6,12 +6,12 @@ import { Spoiler } from "spoiled";
 
 function Hero() {
   return (
-    <div className="relative w-full overflow-hidden bg-gradient-to-br from-[#0d0d0d] via-[#1a1a2e] to-[#3a0ca3]/20 md:pb-28">
+    <div className="relative w-full overflow-hidden bg-gradient-to-bt from-[#0d0d0d] via-[#1a1a2e] to-[#3a0ca3]/80 md:pb-28">
       <div className="grid grid-cols-1 md:grid-cols-2  w-full min-h-screen items-center px-4 sm:px-8 md:px-20 py-24">
         {/* Texto */}
         <div className="text-center md:text-center  ">
           <Spotlight />
-          <h1 className="bg-gradient-to-b from-[#432259] to-stone-300 bg-clip-text py-6 md:pb-10 text-5xl sm:text-7xl md:text-9xl font-bold text-transparent md:leading-26">
+          <h1 className="bg-gradient-to-b from-[#432259] to-stone-300 bg-clip-text py-6 md:pb-10  sm:text-7xl md:text-9xl  font-bold text-transparent md:leading-26">
             Tintin the Magician
           </h1>
           <p className="text-sm md:text-xl text-stone-200 ">
@@ -30,12 +30,12 @@ function Hero() {
         </div>
 
         {/* Imagen */}
-        <div className="flex justify-center md:justify-center mt-8 md:mt-0">
+        <div className="flex justify-center md:justify-center mt-8 md:mt-0 mask-r-to-90%">
           <Image
             src={hero1}
             alt="Tintin the Magician"
             className="rounded-2xl object-cover max-w-full h-auto"
-            width={400}
+            width={500}
             height={400}
             priority
           />

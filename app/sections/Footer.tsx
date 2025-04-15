@@ -12,7 +12,11 @@ export default function Footer() {
           rel="noopener noreferrer"
           className="hover:text-slate-700 cursor-pointer"
         >
-          <Insta stroke="none" fill="#e7e5e4" />
+          <Insta
+            stroke="none"
+            fill="#e7e5e4"
+            className="drop-shadow-lg drop-shadow-white/50"
+          />
         </a>
         <h1 className="text-sm text-[#e7e5e4]">
           © {new Date().getFullYear()} Bastien Bonilla All rights reserved.
