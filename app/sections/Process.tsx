@@ -1,4 +1,7 @@
+
 import Image from "next/image";
+import hero2 from "../../assets/images/hero2.jpg";
+import hero3 from "../../assets/images/hero3.jpg";
 import React from "react";
 import { Timeline } from "../components/ui/timeline";
 
@@ -18,7 +21,7 @@ export default function TimelineDemo() {
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="https://assets.aceternity.com/templates/startup-1.webp"
+              src={hero2}
               alt="startup template"
               width={500}
               height={500}
@@ -39,7 +42,7 @@ export default function TimelineDemo() {
 
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
+              src={hero3}
               alt="hero template"
               width={500}
               height={500}
@@ -60,7 +63,7 @@ export default function TimelineDemo() {
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="https://assets.aceternity.com/templates/startup-1.webp"
+              src={hero2}
               alt="startup template"
               width={500}
               height={500}
@@ -80,7 +83,7 @@ export default function TimelineDemo() {
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
+              src={hero3}
               alt="hero template"
               width={500}
               height={500}
