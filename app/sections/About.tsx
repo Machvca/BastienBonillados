@@ -12,7 +12,7 @@ function About() {
         {[hero2, hero3, hero4].map((bg, idx) => (
           <div
             key={idx}
-            className="flex flex-col items-center justify-center rounded-2xl text-center px-4 sm:px-6 md:px-8 w-full md:w-[30%] h-[400px] bg-cover bg-center text-white shadow-lg"
+            className="flex flex-col items-center justify-center rounded-2xl text-center px-4 sm:px-6 md:px-8 w-full md:w-[30%] h-[400px] bg-cover bg-center text-white shadow-lg mb-12"
             style={{ backgroundImage: `url(${bg.src})` }}
           >
             <h1 className="text-2xl font-bold mb-4 text-shadow-lg">
