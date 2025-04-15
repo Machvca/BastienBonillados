@@ -3,65 +3,40 @@ import hero2 from "../../assets/images/hero2.jpg";
 import hero3 from "../../assets/images/hero3.jpg";
 import hero4 from "../../assets/images/hero4.jpg";
 import about4 from "../../assets/images/about4.jpg";
-// import { Spoiler } from "spoiled";
-
 
 function About() {
   return (
-    <>
-      <div className="w-full h-screen antialiased flex   md:flex-row p-12 md:space-x-24 space-y-12 items-center justify-center ">
-        {/* Primera tarjeta con fondo */}
-        {/* <Spoiler> */}
+    <div className="overflow-hidden">
+      {/* Tarjetas */}
+      <div className="w-full min-h-screen antialiased flex flex-col md:flex-row flex-wrap gap-8 items-center justify-center px-4 sm:px-8 md:px-12 md:-mt-64">
+        {[hero2, hero3, hero4].map((bg, idx) => (
           <div
-            className="flex flex-col items-center justify-center rounded-2xl border border-amber-100 px-12 w-full h-full bg-cover bg-center text-slate-200 "
-            style={{ backgroundImage: `url(${hero2.src})` }}
+            key={idx}
+            className="flex flex-col items-center justify-center rounded-2xl text-center px-4 sm:px-6 md:px-8 w-full md:w-[30%] h-[400px] bg-cover bg-center text-white shadow-lg"
+            style={{ backgroundImage: `url(${bg.src})` }}
           >
-            <h1 className="text-3xl font-bold mb-4">
-              THINK LIKE A MAGICIAN KEYNOTES
+            <h1 className="text-2xl font-bold mb-4 text-shadow-lg">
+              {
+                [
+                  "THINK LIKE A MAGICIAN",
+                  "CORPORATE MAGIC SHOWS",
+                  "VIRTUAL MAGIC EXPERIENCES",
+                ][idx]
+              }
             </h1>
-            <p className="mb-4 text-center">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Perferendis, unde itaque quia id doloremque accusamus...
+            <p className="mb-4 text-center text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis, unde...
             </p>
-            <button className="bg-white text-black px-4 py-2 rounded ">
+            <button className="bg-white text-black px-4 py-2 rounded">
               Learn More
             </button>
           </div>
-        {/* </Spoiler> */}
-
-        {/* Segunda tarjeta con fondo */}
-        <div
-          className="flex flex-col items-center justify-center rounded-2xl border px-12 w-full h-full bg-cover bg-center text-white"
-          style={{ backgroundImage: `url(${hero3.src})` }}
-        >
-          <h1 className="text-3xl font-bold mb-4">CORPORATE MAGIC SHOWS</h1>
-          <p className="mb-4 text-center">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Perferendis, unde itaque quia id doloremque accusamus...
-          </p>
-          <button className="bg-white text-black px-4 py-2 rounded">
-            Learn More
-          </button>
-        </div>
-
-        {/* Tercera tarjeta con fondo */}
-        <div
-          className="flex flex-col items-center justify-center rounded-2xl border px-12 w-full h-full bg-cover bg-center text-white"
-          style={{ backgroundImage: `url(${hero4.src})` }}
-        >
-          <h1 className="text-3xl font-bold mb-4">VIRTUAL MAGIC EXPERIENCES</h1>
-          <p className="mb-4 text-center">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Perferendis, unde itaque quia id doloremque accusamus...
-          </p>
-          <button className="bg-white text-black px-4 py-2 rounded">
-            Learn More
-          </button>
-        </div>
+        ))}
       </div>
 
-      <div className="relative w-full h-screen">
-        {/* Imagen de fondo */}
+      {/* Imagen con texto */}
+      <div className="relative w-full min-h-screen overflow-hidden">
         <Image
           src={about4}
           alt="Bastien Bonilla"
@@ -69,19 +44,17 @@ function About() {
           className="object-cover w-full h-full"
           priority
         />
-
-        {/* Texto encima */}
-        <div className="absolute top-0 left-0 p-12 text-right text-white bg-black/20 ml-12 mt-12">
-          <h1 className="text-7xl font-bold">Don pendejo</h1>
-          <p className="mt-4 max-w-xl">
+        <div className="absolute top-0 left-0 p-6 sm:p-12 text-left sm:text-right text-white bg-black/40 m-4 sm:ml-12 sm:mt-12 rounded-xl max-w-2xl">
+          <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold">
+            Don pendejo
+          </h1>
+          <p className="mt-4 text-sm sm:text-base">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
-            voluptas aut. Explicabo voluptatibus corporis exercitationem. Cumque
-            error unde quae dignissimos, repudiandae neque reiciendis totam
-            aliquam ab tenetur, numquam officiis doloribus?
+            voluptas aut. Explicabo voluptatibus corporis exercitationem...
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

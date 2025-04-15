@@ -11,60 +11,63 @@ import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
 
 export function Reviews() {
   return (
-    <div className="h-[50rem]  flex flex-col antialiased  sm:items-center justify-center relative overflow-hidden pt-24  ">
-      <h1 className="text-xl text-center md:text-3xl text-slate-200 font-bold  flex justify-center items-center  -mt-60 md:mb-16">
+    <section className="w-full flex flex-col items-center justify-center py-24 px-4 sm:px-8 relative overflow-hidden bg-transparent">
+      <h1 className="text-center text-lg sm:text-2xl md:text-3xl font-bold text-slate-200 mb-12">
         YOUR COMPANY IS IN GOOD COMPANY
       </h1>
-      <div className="bg-transparent  h-32 md:mb-12 w-full flex flex-row justify-evenly items-center   md:mx-8 text-stone-300">
-        {/* iconos de las empresas */}
+
+      <div className="w-full flex  sm:flex-col-3 justify-evenly items-center gap-12 sm:gap-12 mb-12 px-2">
         <Image
           src={hpLogo}
-          width={50}
-          height={50}
-          alt={"Tintin the Magician"}
-          className=" object-cover "
+          alt="HP"
+          width={80}
+          height={80}
+          className="object-contain h-12 w-auto"
           priority
         />
         <Image
           src={revolutlogo}
+          alt="Revolut"
           width={100}
           height={100}
-          alt={"Tintin the Magician"}
-          className=" object-cover "
+          className="object-contain h-12 w-auto"
           priority
         />
         <Image
           src={yamahalogo}
+          alt="Yamaha"
           width={100}
           height={100}
-          alt={"Tintin the Magician"}
-          className=" object-cover "
+          className="object-contain h-12 w-auto"
           priority
         />
         <Image
           src={tgvlogo}
+          alt="TGV"
           width={100}
           height={100}
-          alt={"Tintin the Magician"}
-          className=" object-cover "
+          className="object-contain h-12 w-auto"
           priority
         />
         <Image
           src={straumannlogo}
+          alt="Straumann"
           width={150}
           height={100}
-          alt={"Tintin the Magician"}
-          className=" object-cover "
+          className="object-contain h-12 w-auto"
           priority
         />
       </div>
-      <InfiniteMovingCards
-        items={testimonials}
-        direction="right"
-        speed="slow"
-        className="bg-transparent"
-      />
-    </div>
+
+      <div className="w-full max-w-6xl">
+        <InfiniteMovingCards
+          items={testimonials}
+          direction="right"
+          speed="slow"
+          className="bg-transparent"
+        />
+      </div>
+    </section>
   );
 }
 

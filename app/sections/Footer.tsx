@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className=" bottom-0 w-ful p-4 text-slate-900 text-center bg-[#1a1a2e] mt-auto backdrop-blur-md   ">
-      <div className="grid grid-cols-3 items-center justify-items-center mx-144">
+    <footer className="bottom-0 w-full p-4 text-slate-900 text-center bg-[#1a1a2e] mt-auto backdrop-blur-md">
+      <div className="grid grid-cols-3 items-center justify-items-center max-w-7xl mx-auto px-4">
         <a
           href="https://www.instagram.com/thetintinmickey/"
           target="_blank"

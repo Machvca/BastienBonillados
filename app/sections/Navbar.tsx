@@ -21,7 +21,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`fixed font-syne top-0 left-0 right-0 z-50 bg-gradient-to-b from-[#432259] to-neutral-100 bg-clip-text transition-colors duration-600 ${
+      className={`fixed  font-syne top-0 left-0 right-0 z-50 bg-gradient-to-b from-[#432259] to-neutral-100 bg-clip-text transition-colors duration-600 ${
         isScrolled ? "bg-slate-900/20 shadow-md" : "bg-transparent"
       }`}
     >
@@ -41,9 +41,9 @@ function Navbar() {
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
-            <X size={30} className="text-[#432259]" />
+            <X size={30} className="text-[#bebcc0]" />
           ) : (
-            <Menu size={30} className="text-[#432259]" />
+            <Menu size={30} className="text-[#bebcc0]" />
           )}
         </button>
 

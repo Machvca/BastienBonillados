@@ -39,11 +39,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" >
+    <html lang="en">
       <body
-        className= {`${syne.variable} font-syne antialiased flex flex-col min-h-screen`}
+        className={`${syne.variable} font-syne antialiased flex flex-col min-h-screen overflow-x-hidden`}
       >
-        <Navbar  />
+        <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />
       </body>
