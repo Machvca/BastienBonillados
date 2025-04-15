@@ -12,17 +12,17 @@ import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
 export function Reviews() {
   return (
     <section className="w-full flex flex-col items-center justify-center py-24 px-4 sm:px-8 relative overflow-hidden bg-transparent">
-      <h1 className="text-center text-lg sm:text-2xl md:text-3xl font-bold text-slate-200 mb-12">
+      <h1 className="text-center text-lg sm:text-2xl md:text-4xl font-bold text-slate-200 mb-12 md:py-12">
         YOUR COMPANY IS IN GOOD COMPANY
       </h1>
 
-      <div className="w-full flex  sm:flex-col-3 justify-evenly items-center gap-12 sm:gap-12 mb-12 px-2">
+      <div className="w-full grid grid-cols-3 md:grid-cols-5 px-12 lg:px-48 justify-center md:justify-evenly items-center gap-6 md:gap-10  mb-24  ">
         <Image
           src={hpLogo}
           alt="HP"
           width={80}
           height={80}
-          className="object-contain h-12 w-auto"
+          className="object-contain h-6 md:h-10 w-auto"
           priority
         />
         <Image
@@ -30,7 +30,7 @@ export function Reviews() {
           alt="Revolut"
           width={100}
           height={100}
-          className="object-contain h-12 w-auto"
+          className="object-contain h-4 md:h-6 w-auto"
           priority
         />
         <Image
@@ -38,7 +38,7 @@ export function Reviews() {
           alt="Yamaha"
           width={100}
           height={100}
-          className="object-contain h-12 w-auto"
+          className="object-contain h-4 md:h-6 w-auto"
           priority
         />
         <Image
@@ -46,7 +46,7 @@ export function Reviews() {
           alt="TGV"
           width={100}
           height={100}
-          className="object-contain h-12 w-auto"
+          className="object-contain h-6 md:h-10 w-auto"
           priority
         />
         <Image
@@ -54,7 +54,7 @@ export function Reviews() {
           alt="Straumann"
           width={150}
           height={100}
-          className="object-contain h-12 w-auto"
+          className="object-contain h-6 md:h-10 w-auto"
           priority
         />
       </div>

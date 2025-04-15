@@ -7,14 +7,14 @@ import { Spoiler } from "spoiled";
 function Hero() {
   return (
     <div className="relative w-full overflow-hidden bg-gradient-to-br from-[#0d0d0d] via-[#1a1a2e] to-[#3a0ca3]/20 md:pb-28">
-      <div className="grid grid-cols-1 md:grid-cols-2 w-full min-h-screen items-center px-4 sm:px-8 md:px-20 py-24">
+      <div className="grid grid-cols-1 md:grid-cols-2  w-full min-h-screen items-center px-4 sm:px-8 md:px-20 py-24">
         {/* Texto */}
-        <div className="text-center md:text-left">
+        <div className="text-center md:text-center  ">
           <Spotlight />
-          <h1 className="bg-gradient-to-b from-[#432259] to-stone-300 bg-clip-text py-6 md:pb-10 text-5xl sm:text-6xl md:text-8xl font-bold text-transparent leading-tight">
+          <h1 className="bg-gradient-to-b from-[#432259] to-stone-300 bg-clip-text py-6 md:pb-10 text-5xl sm:text-6xl md:text-9xl font-bold text-transparent leading-26">
             Tintin the Magician
           </h1>
-          <p className="text-sm md:text-xl text-stone-200 text-left">
+          <p className="text-sm md:text-xl text-stone-200 ">
             A magnetic performer with a unique style, Tintin captivates
             audiences with his blend of magic and humor. His shows are a
             delightful mix of illusion and entertainment.
@@ -30,7 +30,7 @@ function Hero() {
         </div>
 
         {/* Imagen */}
-        <div className="flex justify-center md:justify-end mt-8 md:mt-0">
+        <div className="flex justify-center md:justify-center mt-8 md:mt-0">
           <Image
             src={hero1}
             alt="Tintin the Magician"

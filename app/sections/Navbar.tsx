@@ -4,6 +4,10 @@ import { Menu, X } from "lucide-react";
 import Insta from "../../app/components/Insta";
 import logoBastien from "../../assets/images/logoBastien.png";
 import Image from "next/image";
+import { Spoiler } from "spoiled";
+import { Spotlight } from "../components/ui/spotlight-new";
+
+
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -75,35 +79,39 @@ function Navbar() {
 
       {/* Menú móvil */}
       <div
-        className={`md:hidden fixed top-0 left-0 w-full h-full bg-slate-100 flex flex-col items-center justify-center gap-6 text-8xl transition-transform duration-700 ${
+        className={`md:hidden fixed top-0 left-0 w-full h-full text-stone-400 bg-gradient-to-br from-[#0d0d0d] via-[#1a1a2e] to-[#3a0ca3] md:pb-28 flex flex-col items-center justify-center gap-6 text-8xl transition-transform duration-700 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="flex flex-col items-center justify-center gap-6 text-8xl sm:px-24">
-          <a
-            href="#"
-            className="hover:text-indigo-900"
-            onClick={() => setIsOpen(false)}
-          >
-            About Me
-          </a>
-          <a
-            href="#"
-            className="hover:text-indigo-900"
-            onClick={() => setIsOpen(false)}
-          >
-            Contact
-          </a>
-          <a
-            href="https://www.instagram.com/thetintinmickey/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-indigo-900"
-            onClick={() => setIsOpen(false)}
-          >
-            Instagram
-          </a>
-        </div>
+        <Spotlight />
+
+        <Spoiler>
+          <div className="flex flex-col items-center justify-center gap-6 text-8xl sm:px-24">
+            <a
+              href="#"
+              className="hover:text-indigo-900"
+              onClick={() => setIsOpen(false)}
+            >
+              About Me
+            </a>
+            <a
+              href="#"
+              className="hover:text-indigo-900"
+              onClick={() => setIsOpen(false)}
+            >
+              Contact
+            </a>
+            <a
+              href="https://www.instagram.com/thetintinmickey/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-indigo-900"
+              onClick={() => setIsOpen(false)}
+            >
+              Instagram
+            </a>
+          </div>
+        </Spoiler>
       </div>
     </nav>
   );

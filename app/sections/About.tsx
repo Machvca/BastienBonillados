@@ -46,7 +46,7 @@ function About() {
         />
         <div className="absolute top-0 left-0 p-6 sm:p-12 text-left sm:text-right text-white bg-black/40 m-4 sm:ml-12 sm:mt-12 rounded-xl max-w-2xl">
           <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold">
-            Don pendejo
+            &quot;Bastien Bonilla&quot;
           </h1>
           <p className="mt-4 text-sm sm:text-base">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
