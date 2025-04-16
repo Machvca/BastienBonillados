@@ -22,7 +22,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`fixed  font-syne top-0 left-0 right-0 z-50 bg-gradient-to-b from-[#432259] to-neutral-100 bg-clip-text transition-colors duration-600 ${
+      className={`fixed  font-rubik top-0 left-0 right-0 z-50 bg-gradient-to-b from-[#432259] to-neutral-100 bg-clip-text transition-colors duration-600 ${
         isScrolled ? "bg-slate-900/20 shadow-md" : "bg-transparent"
       }`}
     >

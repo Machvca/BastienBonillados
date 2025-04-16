@@ -8,7 +8,7 @@ function About() {
   return (
     <div className="overflow-hidden">
       {/* Tarjetas */}
-      <div className="w-full min-h-screen antialiased flex flex-col md:flex-row flex-wrap gap-8 items-center justify-center px-4 sm:px-8 md:px-12 md:-mt-64">
+      <div className="w-full min-h-screen antialiased flex flex-col md:flex-row flex-wrap gap-8 items-center justify-center px-4 sm:px-8 md:px-12 md:-mt-64 mask-r-from-50%">
         {[hero2, hero3, hero4].map((bg, idx) => (
           <div
             key={idx}
