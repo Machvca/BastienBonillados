@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import { Archivo} from "next/font/google";
-import {  Syne } from "next/font/google";
+import { Archivo } from "next/font/google";
+import { Syne } from "next/font/google";
 import { Rubik } from "next/font/google";
 import "./globals.css";
-
-import Footer from "./sections/Footer";
-import Navbar from "./sections/Navbar";
+import Navbar from "../components/sections/Navbar";
+import Footer from "../components/sections/Footer";
 
 const archivo = Archivo({
   display: "swap",

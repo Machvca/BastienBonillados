@@ -1,13 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import hpLogo from "../../assets/images/hpLogo.png";
-import revolutlogo from "../../assets/images/revolutlogo.png";
-import yamahalogo from "../../assets/images/yamahalogo.png";
-import tgvlogo from "../../assets/images/tgvlogo.png";
-import straumannlogo from "../../assets/images/straumannlogo.png";
+import hpLogo from "../../../public/assets/images/hpLogo.png";
+import revolutlogo from "../../../public/assets/images/revolutlogo.png";
+import yamahalogo from "../../../public/assets/images/yamahalogo.png";
+import tgvlogo from "../../../public/assets/images/tgvlogo.png";
+import straumannlogo from "../../../public/assets/images/straumannlogo.png";
 // import React, { useEffect, useState } from "react";
-import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
+import { InfiniteMovingCards } from "../../components/ui/infinite-moving-cards";
 
 export function Reviews() {
   return (
@@ -74,7 +74,7 @@ export function Reviews() {
 const testimonials = [
   {
     quote:
-    "Aute aliqua voluptate tempor officia. Sit aliquip enim quis culpa. Dolore incididunt in esse esse sunt elit.",
+      "Aute aliqua voluptate tempor officia. Sit aliquip enim quis culpa. Dolore incididunt in esse esse sunt elit.",
     name: "Charles Dickens",
     title: "A Tale of Two Cities",
   },
@@ -90,7 +90,6 @@ const testimonials = [
     title: "A Dream Within a Dream",
   },
   {
-    
     quote:
       "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
     name: "Jane Austen",

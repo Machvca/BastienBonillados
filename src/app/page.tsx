@@ -1,8 +1,7 @@
-import About from "./sections/About";
-import Process from "./sections/Process";
-import Hero from "./sections/Hero";
-import { Reviews } from "./sections/Reviews";
-
+import About from "../components/sections/About";
+import Hero from "../components/sections/Hero";
+import { Reviews } from "../components/sections/Reviews";
+import Process from "../components/sections/Process";
 
 export default function Home() {
   return (

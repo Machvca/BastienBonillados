@@ -1,10 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import Insta from "../../app/components/Insta";
-import logoBastien from "../../assets/images/logoBastien.png";
+import Insta from "../../components/Insta";
+import logoBastien from "../../../public/assets/images/logoBastien.png";
 import Image from "next/image";
-import { Spotlight } from "../components/ui/spotlight-new";
+import { Spotlight } from "../../components/ui/spotlight-new";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

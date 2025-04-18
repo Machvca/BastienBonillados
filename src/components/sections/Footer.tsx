@@ -1,5 +1,5 @@
-import logoBastien from "../../assets/images/logoBastien.png";
-import Insta from "../../app/components/Insta";
+import logoBastien from "../../../public/assets/images/logoBastien.png";
+import Insta from "../../components/Insta";
 import Image from "next/image";
 
 export default function Footer() {

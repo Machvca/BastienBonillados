@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import { Spotlight } from "../components/ui/spotlight-new";
-import hero1 from "../../assets/images/hero1.jpg";
+import { Spotlight } from "../../components/ui/spotlight-new";
+import hero1 from "../../../public/assets/images/hero1.jpg";
 import { Spoiler } from "spoiled";
 
 function Hero() {
