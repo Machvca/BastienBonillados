@@ -4,13 +4,13 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bottom-0 w-full p-4 text-slate-900 text-center bg-[#1a1a2e] mt-auto backdrop-blur-md">
+    <footer className="bottom-0 w-full p-4 text-stone-900-900 text-center bg-[#1a1a2e] mt-auto backdrop-blur-md">
       <div className="grid grid-cols-3 items-center justify-items-center max-w-7xl mx-auto px-4">
         <a
           href="https://www.instagram.com/thetintinmickey/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-slate-700 cursor-pointer"
+          className="hover:text-stone-900-700 cursor-pointer"
         >
           <Insta
             stroke="none"

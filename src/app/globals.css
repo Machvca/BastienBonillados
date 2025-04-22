@@ -9,7 +9,7 @@
 
   @keyframes scroll {
     to {
-      transform: translate(calc(-50% - 0.5rem));
+      transform: transtone-900(calc(-50% - 0.5rem));
     }
   }
 }
