@@ -12,7 +12,7 @@ import { InfiniteMovingCards } from "../../components/ui/infinite-moving-cards";
 export function Reviews() {
   return (
     <section className="w-full flex flex-col items-center justify-center py-24 px-4 sm:px-8 relative overflow-hidden bg-transparent">
-      <h1 className="text-center text-lg sm:text-2xl md:text-4xl font-rubik font-bold text-stone-900-200 mb-12 md:py-12">
+      <h1 className="text-center text-lg sm:text-2xl md:text-4xl font-rubik font-bold text-stone-900 mb-12 md:py-12">
         YOUR COMPANY IS IN GOOD COMPANY
       </h1>
 

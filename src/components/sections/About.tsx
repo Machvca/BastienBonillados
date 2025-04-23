@@ -28,9 +28,7 @@ function About() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perferendis, unde...
             </p>
-            <button className="bg-white text-black px-4 py-2 rounded">
-              Learn More
-            </button>
+         
           </div>
         ))}
       </div>

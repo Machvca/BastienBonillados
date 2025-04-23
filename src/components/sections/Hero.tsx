@@ -12,13 +12,13 @@ function Hero() {
     <div className="grid grid-cols-1 md:grid-cols-2 h-screen min-h-screen items-center px-4 sm:px-8 md:px-20 py-24  justify-center bg-white relative w-full overflow-hidden md:pb-28">
       <div
         className={cn(
-          "absolute  inset-0",
-          "[background-size:40px_40px]",
-          "[background-image:linear-gradient(to_right,#1c1917_1px,transparent_1px),linear-gradient(to_bottom,#1c1917_1px,transparent_1px)]"
+          "absolute  inset-0 z-0",
+          "[background-size:80px_65px]",
+          "[background-image:linear-gradient(to_right,#a3a3a3_1px,transparent_1px),linear-gradient(to_bottom,#573924_1px,transparent_1px)]"
         )}
       />
       {/* Texto */}
-      <div className="text-center md:text-center  ">
+      <div className="relative z-10 text-center md:text-center  ">
         <Spotlight />
         <h1 className="bg-gradient-to-b from-[#432259] to-stone-900 bg-clip-text z-50 py-6 md:pb-10  text-6xl md:text-9xl  font-bold text-transparent md:leading-26">
           Tintin the Magician
@@ -40,12 +40,12 @@ function Hero() {
 
       {/* Imagen */}
       <div
-        className="flex justify-center md:justify-center mt-8 md:mt-0 "
-        style={{
-          WebkitMaskImage:
-            "linear-gradient(to left, transparent 50%, black 100%)",
-          maskImage: "linear-gradient(to left, transparent 1%, black 40%)",
-        }}
+        className="flex justify-center md:justify-center mt-8 md:mt-0 relative z-10"
+        // style={{
+        //   WebkitMaskImage:
+        //     "linear-gradient(to left, transparent 50%, black 100%)",
+        //   maskImage: "linear-gradient(to left, transparent 1%, black 40%)",
+        // }}
       >
         <Image
           src={hero1}
