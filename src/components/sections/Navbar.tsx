@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import Insta from "../../components/Insta";
-import Instagram from "../../components/Insta";
 import logoBastien from "../../../public/assets/images/logoBastien.png";
 import Image from "next/image";
 import { Spotlight } from "../../components/ui/spotlight-new";
