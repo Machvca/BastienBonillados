@@ -20,10 +20,10 @@ function Hero() {
       {/* Texto */}
       <div className="relative z-10 text-center md:text-center  ">
         <Spotlight />
-        <h1 className="bg-gradient-to-b from-[#432259] to-stone-900 bg-clip-text z-50 py-6 md:pb-10  text-6xl md:text-9xl  font-bold text-transparent md:leading-26">
+        <h1 className="bg-gradient-to-b from-[#621316] to-stone-800 bg-clip-text z-50 py-6 md:pb-10  text-6xl md:text-9xl  font-bold text-transparent md:leading-26">
           Tintin the Magician
         </h1>
-        <p className="text-sm md:text-xl text-stone-900-200 font-rubik text-center">
+        <p className="text-sm md:text-xl text-[#621316] font-rubik text-center">
           A magnetic performer with a unique style, Tintin captivates audiences
           with his blend of magic and humor. His shows are a delightful mix of
           illusion and entertainment.
