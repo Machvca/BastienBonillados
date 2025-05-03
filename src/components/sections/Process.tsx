@@ -5,47 +5,38 @@ import { Timeline } from "../../components/ui/timeline";
 export default function TimelineDemo() {
   const data = [
     {
-      title: "IDEA",
+      title: "Get in Touch",
       content: (
         <div className="grid grid-cols-2 gap-12 mb-12">
           <p className="text-neutral-800 dark:text-stone-900 text-xs md:text-2xl font-normal mb-8">
-            What kind of event / party are you hosting? Gather info about your
-            budget, venue, amount of people coming, location & time, plus other
-            important info.
+            Reach out with your contact information, and we&apos;ll contact you
+            to set up a quick conversation
           </p>
-          <div className="grid grid-cols-2 gap-4">
-            
-          </div>
-        </div>
-      ),
-    },
-    {
-      title: "Get in Touch",
-      content: (
-        <div className="mb-12">
-          <p className="text-neutral-800 dark:text-stone-900 text-xs md:text-2xl font-normal mb-8">
-            When ready, please email (or call) to discuss your specific plans.
-            Let&apos;s open a dialogue, and get the ball rolling.
-          </p>
-
-          <div className="grid grid-cols-2 gap-4">
-            
-          </div>
+          <div className="grid grid-cols-2 gap-4"></div>
         </div>
       ),
     },
     {
       title: "Quick Discussion",
       content: (
+        <div className="mb-12">
+          <p className="text-neutral-800 dark:text-stone-900 text-xs md:text-2xl font-normal mb-8">
+            We&apos;ll talk about your event, your expectations, and see how our
+            offering can satisfy your entertainment needs
+          </p>
+
+          <div className="grid grid-cols-2 gap-4"></div>
+        </div>
+      ),
+    },
+    {
+      title: "Closing",
+      content: (
         <div className="grid grid-cols-2 gap-12 mb-12">
           <p className="text-neutral-800 dark:text-stone-900 text-xs md:text-2xl font-normal mb-8">
-            What kind of event / party are you hosting? Gather info about your
-            budget, venue, amount of people coming, location & time, plus other
-            important info.
+            Confirm the date & the package you want, sign the dotted line...
           </p>
-          <div className="grid grid-cols-2 gap-4">
-            
-          </div>
+          <div className="grid grid-cols-2 gap-4"></div>
         </div>
       ),
     },
@@ -54,12 +45,9 @@ export default function TimelineDemo() {
       content: (
         <div className="mb-12">
           <p className="text-neutral-800 dark:text-neutral-900 text-xs md:text-2xl font-normal mb-8">
-            We speak about your event, then decide the optimal place for me to
-            enrich your guests&apos; overall experience.
+            Sit back & enjoy as Tintin the Magician will take care of the rest !
           </p>
-          <div className="grid grid-cols-2 gap-4">
-            
-          </div>
+          <div className="grid grid-cols-2 gap-4"></div>
         </div>
       ),
     },
