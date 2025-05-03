@@ -6,8 +6,9 @@ import revolutlogo from "../../../public/assets/images/revolutlogo.png";
 import yamahalogo from "../../../public/assets/images/yamahalogo.png";
 import tgvlogo from "../../../public/assets/images/tgvlogo.png";
 import straumannlogo from "../../../public/assets/images/straumannlogo.png";
+import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 // import React, { useEffect, useState } from "react";
-import { InfiniteMovingCards } from "../../components/ui/infinite-moving-cards";
+// import { InfiniteMovingCards } from "../../components/ui/infinite-moving-cards";
 
 export function Reviews() {
   return (
@@ -15,6 +16,8 @@ export function Reviews() {
       <h1 className="text-center text-lg sm:text-2xl md:text-5xl font-rubik font-bold text-[#621316]/90 mb-12 md:py-12">
         YOUR COMPANY IS IN GOOD COMPANY
       </h1>
+
+      
 
       <div className="w-full grid grid-cols-3 md:grid-cols-5 px-12 lg:px-48 justify-center md:justify-evenly items-center gap-6 md:gap-10  mb-24  ">
         <Image
