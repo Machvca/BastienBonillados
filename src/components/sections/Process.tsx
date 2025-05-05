@@ -8,7 +8,7 @@ export default function TimelineDemo() {
       title: "Get in Touch",
       content: (
         <div className="grid grid-cols-2 gap-12 mb-12">
-          <p className="text-neutral-800 dark:text-stone-900 text-xs md:text-2xl font-normal mb-8">
+          <p className="text-neutral-800 dark:text-[#621316]/90 text-xs md:text-2xl font-normal mb-8">
             Reach out with your contact information, and we&apos;ll contact you
             to set up a quick conversation
           </p>
@@ -20,7 +20,7 @@ export default function TimelineDemo() {
       title: "Quick Discussion",
       content: (
         <div className="mb-12">
-          <p className="text-neutral-800 dark:text-stone-900 text-xs md:text-2xl font-normal mb-8">
+          <p className="text-neutral-800 dark:text-[#621316]/90 text-xs md:text-2xl font-normal mb-8">
             We&apos;ll talk about your event, your expectations, and see how our
             offering can satisfy your entertainment needs
           </p>
@@ -33,7 +33,7 @@ export default function TimelineDemo() {
       title: "Closing",
       content: (
         <div className="grid grid-cols-2 gap-12 mb-12">
-          <p className="text-neutral-800 dark:text-stone-900 text-xs md:text-2xl font-normal mb-8">
+          <p className="text-neutral-800 dark:text-[#621316]/90 text-xs md:text-2xl font-normal mb-8">
             Confirm the date & the package you want, sign the dotted line...
           </p>
           <div className="grid grid-cols-2 gap-4"></div>
@@ -44,7 +44,7 @@ export default function TimelineDemo() {
       title: "Deliver",
       content: (
         <div className="mb-12">
-          <p className="text-neutral-800 dark:text-neutral-900 text-xs md:text-2xl font-normal mb-8">
+          <p className="text-neutral-800 dark:text-[#621316]/90 text-xs md:text-2xl font-normal mb-8">
             Sit back & enjoy as Tintin the Magician will take care of the rest !
           </p>
           <div className="grid grid-cols-2 gap-4"></div>
