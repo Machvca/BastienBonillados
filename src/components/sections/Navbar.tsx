@@ -7,6 +7,7 @@ import Image from "next/image";
 import { Spotlight } from "../../components/ui/spotlight-new";
 import { Link } from "@/src/i18n/routing";
 import { useTranslations } from "next-intl";
+import LanguageSwitcher from "../LanguageSelector";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -75,6 +76,7 @@ function Navbar() {
             <Insta stroke="none" fill="#621316" />
           </a>
         </div>
+        <LanguageSwitcher />
       </div>
 
       {/* Menú móvil */}

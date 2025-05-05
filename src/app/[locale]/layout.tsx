@@ -8,6 +8,7 @@ import { notFound } from "next/navigation";
 import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 
+// Cargar fuentes
 const archivo = Archivo({
   display: "swap",
   weight: "variable",
@@ -34,18 +35,28 @@ export const metadata: Metadata = {
   description: "My personal website",
 };
 
+// ✅ Tipo corregido
+type LocaleLayoutProps = {
+  children: React.ReactNode;
+  params: {
+    locale: string;
+  };
+};
+
 export default async function LocaleLayout({
   children,
   params,
-}: Readonly<{
-  children: React.ReactNode;
-  params: { locale: string };
-}>) {
-  const { locale } = await params;
+}: LocaleLayoutProps) {
+  const { locale } = params;
+
+  // Validar si el locale es válido
   if (!routing.locales.includes(locale as Locale)) {
     notFound();
   }
+
+  // Cargar los mensajes de traducción
   const messages = await getMessages();
+
   return (
     <html lang={locale}>
       <body
@@ -57,7 +68,4 @@ export default async function LocaleLayout({
       </body>
     </html>
   );
-}
-
-{
 }
