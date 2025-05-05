@@ -45,9 +45,9 @@ function Navbar() {
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
-            <X size={30} className="text-[#bebcc0]" />
+            <X size={40} className="text-stone-400" />
           ) : (
-            <Menu size={30} className="text-[#bebcc0]" />
+            <Menu size={40} className="text-[#621316]" />
           )}
         </button>
 
@@ -79,23 +79,25 @@ function Navbar() {
 
       {/* Menú móvil */}
       <div
-        className={`md:hidden fixed top-0 left-0 w-full h-full text-stone-900-400 bg-gradient-to-br from-[#0d0d0d] via-[#1a1a2e] to-[#3a0ca3] md:pb-28 flex flex-col items-center justify-center gap-6 text-8xl transition-transform duration-700 ${
-          isOpen ? "transtone-900-x-0" : "-transtone-900-x-full"
+        className={`md:hidden fixed top-0 left-0 w-full h-full text-stone-400 bg-gradient-to-br from-[#621316] via-[#621316] to-[#621316] pb-28 flex flex-col items-center justify-center gap-6 text-4xl transition-all duration-700 ease-in-out ${
+          isOpen
+            ? "translate-x-0 opacity-100 pointer-events-auto"
+            : "-translate-x-full opacity-0 pointer-events-none"
         }`}
       >
         <Spotlight />
 
-        <div className="flex flex-col items-center justify-center gap-6 text-8xl sm:px-24">
+        <div className="flex flex-col items-center justify-center gap-6 text-8xl">
           <a
             href="#"
-            className="hover:text-indigo-900"
+            className="hover:text-stone-200"
             onClick={() => setIsOpen(false)}
           >
             About Me
           </a>
           <a
             href="#"
-            className="hover:text-indigo-900"
+            className="hover:text-stone-200"
             onClick={() => setIsOpen(false)}
           >
             Contact
@@ -104,7 +106,7 @@ function Navbar() {
             href="https://www.instagram.com/thetintinmickey/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-indigo-900"
+            className="hover:text-stone-200"
             onClick={() => setIsOpen(false)}
           >
             Instagram

@@ -9,7 +9,7 @@ function Hero() {
   return (
     // <div className="relative w-full overflow-hidden md:pb-28">
     //   <div className="grid grid-cols-1 md:grid-cols-2  w-full min-h-screen items-center px-4 sm:px-8 md:px-20 py-24">
-    <div className="grid grid-cols-1 md:grid-cols-2 h-screen min-h-screen items-center px-4 sm:px-8 md:px-20 py-24  justify-center bg-white relative w-full overflow-hidden md:pb-28">
+    <div className="grid grid-cols-1 md:grid-cols-2 h-screen min-h-screen items-center px-4 sm:px-8 md:px-20 py-24  justify-center bg-stone-100 relative w-full overflow-hidden md:pb-28">
       <div
         className={cn(
           "absolute  inset-0 z-0",
@@ -20,7 +20,7 @@ function Hero() {
       {/* Texto */}
       <div className="relative z-10 text-center md:text-center  ">
         <Spotlight />
-        <h1 className="bg-gradient-to-b from-[#621316] to-stone-800 bg-clip-text z-50 py-6 md:pb-10  text-6xl md:text-9xl  font-bold text-transparent md:leading-26">
+        <h1 className="bg-gradient-to-b from-[#621316] to-stone-600 bg-clip-text z-50 py-6 md:pb-10 text-6xl md:text-9xl  font-bold text-transparent md:leading-26">
           Tintin the Magician
         </h1>
         <p className="text-sm md:text-xl text-[#621316] font-rubik text-center">
