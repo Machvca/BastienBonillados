@@ -75,7 +75,7 @@ function Navbar() {
           >
             <Insta stroke="none" fill="#621316" />
           </a>
-        <LanguageSwitcher />
+          <LanguageSwitcher />
         </div>
       </div>
 
@@ -113,6 +113,7 @@ function Navbar() {
           >
             Instagram
           </a>
+          <LanguageSwitcher />
         </div>
       </div>
     </nav>
