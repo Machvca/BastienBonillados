@@ -38,7 +38,7 @@ function Navbar() {
             className=" w-10 h-12 cursor-pointer"
           />
         </a>
-        <div className="text-white">{t("ABOUT")}</div>
+        <div className="text-black">{t("ABOUT")}</div>
 
         {/* Botón de menú hamburguesa */}
         <button
@@ -75,8 +75,8 @@ function Navbar() {
           >
             <Insta stroke="none" fill="#621316" />
           </a>
-        </div>
         <LanguageSwitcher />
+        </div>
       </div>
 
       {/* Menú móvil */}
