@@ -18,6 +18,11 @@ export const routing = defineRouting({
       es: "/quien-soy",
       fr: "/qui-suis-je",
     },
+    "/contact": {
+      en: "/contact",
+      es: "/contacto",
+      fr: "/contact",
+    },
   },
   // Add more pathnames as needed
 });
