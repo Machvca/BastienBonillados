@@ -33,13 +33,13 @@ function Navbar() {
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <a href="#">
+        <Link href="/">
           <Image
             src={logoBastien}
             alt="Logo"
             className=" w-10 h-12 cursor-pointer"
           />
-        </a>
+        </Link>
 
         {/* Botón de menú hamburguesa */}
         <button

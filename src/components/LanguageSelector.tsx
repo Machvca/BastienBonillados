@@ -75,33 +75,33 @@ export default function LanguageSelector({
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={toggleDropdown}
-        className="flex items-center space-x-1 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-md transition-colors duration-150 ease-in-out"
+        className="flex items-center space-x-1 text-sm font-rubik text-[#621316] hover:bg-stone-300 rounded-md transition-colors duration-150 ease-in-out"
         aria-haspopup="true"
         aria-expanded={isOpen}
       >
         <span className="text-2xl">{selectedLanguage.flag}</span>
-        <span className="hidden sm:inline text-base text-bold ">
+        {/* <span className="hidden sm:inline text-base text-bold ">
           {selectedLanguage.name}
-        </span>
+        </span> */}
         <IoChevronDownOutline
-          className={`size-4 ${mobile ? "text-white" : "text-black"}`}
+          className={`size-4 ${mobile ? "text-black" : "text-[#621316]"}`}
         />
       </button>
 
       {isOpen && (
         <div
-          className="absolute right-0 mt-2 py-2 w-24 bg-black text-white rounded-md shadow-xl z-20 border border-white"
+          className="absolute right-0 mt-2 py-2 w-24 bg-stone-200  rounded-md shadow-xl z-20"
           role="menu"
         >
           {languages.map((language) => (
             <button
               key={language.code}
               onClick={() => selectLanguage(language)}
-              className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
+              className="flex items-center px-4 py-2 text-sm text-[#621316] hover:bg-stone-300 w-full text-left"
               role="menuitem"
             >
               <span className="mr-2 text-2xl">{language.flag}</span>
-              <span className="text-white">{language.name}</span>
+              <span className="text-[#621316]">{language.name}</span>
             </button>
           ))}
         </div>

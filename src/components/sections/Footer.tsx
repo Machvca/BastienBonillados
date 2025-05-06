@@ -4,6 +4,7 @@ import logoBastien from "../../../public/assets/images/logoBastien.png";
 import Insta from "../../components/Insta";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export default function Footer() {
   const t = useTranslations();
@@ -26,13 +27,13 @@ export default function Footer() {
         <h1 className="text-sm text-[#621316]">
           © {new Date().getFullYear()}  {t("FOOTER_COPYRIGHT")}
         </h1>
-        <a href="#">
+        <Link href="/">
           <Image
             src={logoBastien}
             alt="Logo"
             className="w-14 h-16 cursor-pointer text-[#621316]"
           />
-        </a>
+        </Link>
       </div>
     </footer>
   );
