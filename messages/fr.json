@@ -1,3 +1,56 @@
 {
-  "ABOUT": "À propos de moi"
+  "ABOUT": "À propos de moi",
+  "CONTACT": "Contact",
+  "NAME": "Tintin le Magicien",
+  "HERO_DESCRIPTION": "Un artiste magnétique avec un style unique, Tintin captive le public avec son mélange de magie et d’humour. Ses spectacles sont un délicieux mélange d’illusion et de divertissement.",
+  "BOOK_NOW": "Réserver maintenant",
+  "REVIEWS_TITLE": "VOTRE ENTREPRISE EST ENTRE DE BONNES MAINS",
+
+  "REVIEW_1_QUOTE": "Aute aliqua voluptate tempor officia. Sit aliquip enim quis culpa. Dolore incididunt in esse esse sunt elit.",
+  "REVIEW_1_NAME": "Charles Dickens",
+  "REVIEW_1_TITLE": "Un conte de deux villes",
+
+  "REVIEW_2_QUOTE": "Être ou ne pas être, telle est la question : s’il est plus noble dans l’esprit de souffrir...",
+  "REVIEW_2_NAME": "William Shakespeare",
+  "REVIEW_2_TITLE": "Hamlet",
+
+  "REVIEW_3_QUOTE": "Tout ce que nous voyons ou semblons n’est qu’un rêve dans un rêve.",
+  "REVIEW_3_NAME": "Edgar Allan Poe",
+  "REVIEW_3_TITLE": "Un rêve dans un rêve",
+
+  "REVIEW_4_QUOTE": "C’est une vérité universellement reconnue qu’un homme célibataire en possession d’une grande fortune...",
+  "REVIEW_4_NAME": "Jane Austen",
+  "REVIEW_4_TITLE": "Orgueil et Préjugés",
+
+  "REVIEW_5_QUOTE": "Appelez-moi Ismaël. Il y a quelques années – peu importe combien précisément...",
+  "REVIEW_5_NAME": "Herman Melville",
+  "REVIEW_5_TITLE": "Moby-Dick",
+
+  "ABOUT_CARD_1_TITLE": "CLOSE-UP MAGIC",
+  "ABOUT_CARD_1_DESC": "En déambulant, de table en table, le magicien se fond dans la foule de votre événement et réalise des tours interactifs pour de petits groupes. Conçu pour les lieux ou événements ne pouvant accueillir un spectacle. Parfait pour les team buildings, salons, anniversaires, mariages, cocktails et bien plus encore. Aucune exigence technique – juste de la magie pure !",
+
+  "ABOUT_CARD_2_TITLE": "THE SHOW",
+  "ABOUT_CARD_2_DESC": "Spectacle interactif mêlant techniques magiques telles que la prestidigitation, la diversion, le mentalisme, les illusions psychologiques et l’humour dans un numéro peaufiné pendant plus de 10 ans. Adaptable à tout type de lieu : d’un petit appartement à une scène moyenne ou un grand théâtre. Principalement destiné à un public adulte (adolescents et plus), non adapté aux enfants. Le spectacle peut être personnalisé selon le client.",
+
+  "ABOUT_CARD_3_TITLE": "THE ELITE PACKAGE",
+  "ABOUT_CARD_3_DESC": "Le forfait Elite propose une soirée de divertissement entièrement personnalisée, combinant une performance scénique engageante avec de la magie rapprochée interactive. Conçu pour offrir à vos invités une expérience magique complète du début à la fin. Ce forfait est le choix préféré de la plupart des clients, avec Bastien circulant parmi les invités – souvent lors du cocktail ou pendant le service des entrées – réalisant de la magie rapprochée intime qui suscite l’enthousiasme et prépare l’ambiance pour l’acte principal. En combinant ces deux éléments, ce forfait offre une excellente valeur et un tarif réduit. Il garantit une soirée fluide de divertissement captivant dont vos invités se souviendront longtemps.",
+
+  "ABOUT_IMAGE_DESCRIPTION": "VAFFANCULO !",
+
+  "TIMELINE_TITLE_1": "Contactez-nous",
+  "TIMELINE_DESC_1": "Envoyez-nous vos coordonnées et nous vous contacterons pour organiser une brève conversation",
+
+  "TIMELINE_TITLE_2": "Discussion rapide",
+  "TIMELINE_DESC_2": "Nous discuterons de votre événement, de vos attentes et verrons comment notre offre peut répondre à vos besoins",
+
+  "TIMELINE_TITLE_3": "Conclusion",
+  "TIMELINE_DESC_3": "Confirmez la date et le forfait souhaité, signez sur la ligne pointillée...",
+
+  "TIMELINE_TITLE_4": "Livraison",
+  "TIMELINE_DESC_4": "Détendez-vous et profitez, Tintin le Magicien s’occupe du reste !",
+
+  "BOOK_ME": "RÉSERVEZ-MOI POUR VOTRE ÉVÉNEMENT",
+  "CHECK_AVAILABILITY": "VÉRIFIER LA DISPONIBILITÉ",
+
+  "FOOTER_COPYRIGHT": "Tous droits réservés."
 }

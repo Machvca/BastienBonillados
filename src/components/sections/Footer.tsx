@@ -1,8 +1,13 @@
+"use client";
+
 import logoBastien from "../../../public/assets/images/logoBastien.png";
 import Insta from "../../components/Insta";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations();
+
   return (
     <footer className="bottom-0 w-full p-4 text-stone-900-900 text-center bg-stone-100 mt-auto backdrop-blur-md">
       <div className="grid grid-cols-3 items-center justify-items-center max-w-7xl mx-auto px-4">
@@ -19,13 +24,13 @@ export default function Footer() {
           />
         </a>
         <h1 className="text-sm text-[#621316]">
-          © {new Date().getFullYear()} Bastien Bonilla All rights reserved.
+          © {new Date().getFullYear()}  {t("FOOTER_COPYRIGHT")}
         </h1>
         <a href="#">
           <Image
             src={logoBastien}
             alt="Logo"
-            className="w-14 h-16 cursor-pointer text-[#621316] "
+            className="w-14 h-16 cursor-pointer text-[#621316]"
           />
         </a>
       </div>

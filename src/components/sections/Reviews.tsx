@@ -7,19 +7,46 @@ import yamahalogo from "../../../public/assets/images/yamahalogo.png";
 import tgvlogo from "../../../public/assets/images/tgvlogo.png";
 import straumannlogo from "../../../public/assets/images/straumannlogo.png";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
-// import React, { useEffect, useState } from "react";
-// import { InfiniteMovingCards } from "../../components/ui/infinite-moving-cards";
+import { useTranslations } from "next-intl";
 
 export function Reviews() {
+  const t = useTranslations();
+
+  const testimonials = [
+    {
+      quote: t("REVIEW_1_QUOTE"),
+      name: t("REVIEW_1_NAME"),
+      title: t("REVIEW_1_TITLE"),
+    },
+    {
+      quote: t("REVIEW_2_QUOTE"),
+      name: t("REVIEW_2_NAME"),
+      title: t("REVIEW_2_TITLE"),
+    },
+    {
+      quote: t("REVIEW_3_QUOTE"),
+      name: t("REVIEW_3_NAME"),
+      title: t("REVIEW_3_TITLE"),
+    },
+    {
+      quote: t("REVIEW_4_QUOTE"),
+      name: t("REVIEW_4_NAME"),
+      title: t("REVIEW_4_TITLE"),
+    },
+    {
+      quote: t("REVIEW_5_QUOTE"),
+      name: t("REVIEW_5_NAME"),
+      title: t("REVIEW_5_TITLE"),
+    },
+  ];
+
   return (
     <section className="w-full flex flex-col items-center justify-center py-24 px-4 sm:px-8 relative overflow-hidden bg-stone-100">
       <h1 className="text-center text-lg sm:text-2xl md:text-5xl font-rubik font-bold text-[#621316]/90 mb-12 md:py-12">
-        YOUR COMPANY IS IN GOOD COMPANY
+        {t("REVIEWS_TITLE")}
       </h1>
 
-      
-
-      <div className="w-full grid grid-cols-3 md:grid-cols-5 px-12 lg:px-48 justify-center md:justify-evenly items-center gap-6 md:gap-10  mb-24  ">
+      <div className="w-full grid grid-cols-3 md:grid-cols-5 px-12 lg:px-48 justify-center md:justify-evenly items-center gap-6 md:gap-10 mb-24">
         <Image
           src={hpLogo}
           alt="HP"
@@ -73,35 +100,3 @@ export function Reviews() {
     </section>
   );
 }
-
-const testimonials = [
-  {
-    quote:
-      "Aute aliqua voluptate tempor officia. Sit aliquip enim quis culpa. Dolore incididunt in esse esse sunt elit.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
-  },
-  {
-    quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
-  },
-  {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
-  },
-  {
-    quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
-  },
-  {
-    quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
-  },
-];

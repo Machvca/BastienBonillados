@@ -1,4 +1,56 @@
 {
-  "ABOUT": "Sobre mi",
-  "CONTACT": "Contacto"
+  "ABOUT": "Sobre mí",
+  "CONTACT": "Contacto",
+  "NAME": "Tintin el Mago",
+  "HERO_DESCRIPTION": "Un artista magnético con un estilo único, Tintin cautiva al público con su mezcla de magia y humor. Sus espectáculos son una encantadora combinación de ilusión y entretenimiento.",
+  "BOOK_NOW": "Reservar ahora",
+  "REVIEWS_TITLE": "TU EMPRESA ESTÁ EN BUENA COMPAÑÍA",
+
+  "REVIEW_1_QUOTE": "Aute aliqua voluptate tempor officia. Sit aliquip enim quis culpa. Dolore incididunt in esse esse sunt elit.",
+  "REVIEW_1_NAME": "Charles Dickens",
+  "REVIEW_1_TITLE": "Historia de dos ciudades",
+
+  "REVIEW_2_QUOTE": "Ser o no ser, esa es la cuestión: si es más noble en el alma sufrir...",
+  "REVIEW_2_NAME": "William Shakespeare",
+  "REVIEW_2_TITLE": "Hamlet",
+
+  "REVIEW_3_QUOTE": "Todo lo que vemos o parecemos no es más que un sueño dentro de un sueño.",
+  "REVIEW_3_NAME": "Edgar Allan Poe",
+  "REVIEW_3_TITLE": "Un sueño dentro de un sueño",
+
+  "REVIEW_4_QUOTE": "Es una verdad universalmente reconocida que un hombre soltero en posesión de una gran fortuna...",
+  "REVIEW_4_NAME": "Jane Austen",
+  "REVIEW_4_TITLE": "Orgullo y prejuicio",
+
+  "REVIEW_5_QUOTE": "Llámame Ismael. Hace algunos años —no importa cuánto exactamente...",
+  "REVIEW_5_NAME": "Herman Melville",
+  "REVIEW_5_TITLE": "Moby-Dick",
+
+  "ABOUT_CARD_1_TITLE": "CLOSE-UP MAGIC",
+  "ABOUT_CARD_1_DESC": "Caminando, de mesa en mesa, mezclándose: el mago se integra con el público de tu evento y realiza trucos interactivos para pequeños grupos. Diseñado para lugares o eventos que no pueden albergar un espectáculo. Perfecto para team buildings, ferias, cumpleaños, bodas, cócteles y mucho más. ¡Sin requerimientos técnicos, solo magia pura!",
+
+  "ABOUT_CARD_2_TITLE": "THE SHOW",
+  "ABOUT_CARD_2_DESC": "Espectáculo interactivo que mezcla técnicas mágicas como prestidigitación, distracción, mentalismo, engaños psicológicos y humor en un acto curado durante más de 10 años. Puede adaptarse a cualquier tipo de lugar: desde un pequeño apartamento hasta escenarios medianos o grandes teatros. Diseñado principalmente para audiencias adultas (adolescentes en adelante), no apto para niños. El espectáculo puede personalizarse según el cliente.",
+
+  "ABOUT_CARD_3_TITLE": "THE ELITE PACKAGE",
+  "ABOUT_CARD_3_DESC": "El paquete Elite ofrece una noche de entretenimiento completamente personalizada, combinando una actuación escénica cautivadora con magia de cerca interactiva. Está diseñado para brindar a tus invitados una experiencia mágica completa de principio a fin. Esta opción es la preferida por la mayoría de los clientes, con Bastien interactuando entre los asistentes —a menudo durante el cóctel o mientras se sirven los entrantes— realizando magia cercana e íntima que genera entusiasmo y prepara el ambiente para el acto principal. Al combinar ambos elementos en un solo evento, este paquete ofrece un excelente valor y una tarifa con descuento. Garantiza una noche fluida de entretenimiento cautivador que dejará a tus invitados hablando mucho después del evento.",
+
+  "ABOUT_IMAGE_DESCRIPTION": "Este es un pequeño texto en español que aún debo cambiar",
+
+  "TIMELINE_TITLE_1": "Contacto",
+  "TIMELINE_DESC_1": "Envíanos tu información de contacto y nos pondremos en contacto para agendar una conversación rápida",
+
+  "TIMELINE_TITLE_2": "Charla Rápida",
+  "TIMELINE_DESC_2": "Hablaremos sobre tu evento, tus expectativas y veremos cómo podemos satisfacer tus necesidades de entretenimiento",
+
+  "TIMELINE_TITLE_3": "Cierre",
+  "TIMELINE_DESC_3": "Confirma la fecha y el paquete que deseas, firma la línea punteada...",
+
+  "TIMELINE_TITLE_4": "Entrega",
+  "TIMELINE_DESC_4": "Relájate y disfruta mientras Tintin el Mago se encarga del resto!",
+
+  "BOOK_ME": "RESÉRVAME PARA TU EVENTO",
+  "CHECK_AVAILABILITY": "VER DISPONIBILIDAD",
+
+  "FOOTER_COPYRIGHT": "Bastien Bonilla Todos los derechos reservados."
 }
