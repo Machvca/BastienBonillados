@@ -23,6 +23,8 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+
+
   return (
     <nav
       className={`fixed  font-rubik top-0 left-0 right-0 z-50 bg-gradient-to-b from-[#432259] to-neutral-100 bg-clip-text transition-colors duration-600 ${
@@ -38,7 +40,6 @@ function Navbar() {
             className=" w-10 h-12 cursor-pointer"
           />
         </a>
-        <div className="text-black">{t("ABOUT")}</div>
 
         {/* Botón de menú hamburguesa */}
         <button
@@ -58,13 +59,13 @@ function Navbar() {
             href="/about"
             className="text-[#621316] hover:text-[#621316]/20"
           >
-            About Me
+            {t("ABOUT")}
           </Link>
           <Link
             href="/contact"
             className="text-[#621316] hover:text-[#621316]/20"
           >
-            Contact
+            {t("CONTACT")}
           </Link>
 
           <a
