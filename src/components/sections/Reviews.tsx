@@ -42,7 +42,6 @@ export function Reviews() {
     },
   ];
 
-  // Creamos refs y estados de visibilidad por separado
   const logoData = [
     { src: hpLogo, alt: "HP", className: "h-6 md:h-10" },
     { src: revolutlogo, alt: "Revolut", className: "h-4 md:h-6" },
@@ -51,9 +50,21 @@ export function Reviews() {
     { src: straumannlogo, alt: "Straumann", className: "h-6 md:h-10" },
   ];
 
-  // Creamos un arreglo de refs e inViews
-  const logoRefs = logoData.map(() => useRef(null));
-  const logoInViews = logoRefs.map((ref) => useInView(ref, { once: true }));
+  // Declaramos refs e inViews individualmente
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
+  const ref4 = useRef(null);
+  const ref5 = useRef(null);
+
+  const inView1 = useInView(ref1, { once: true });
+  const inView2 = useInView(ref2, { once: true });
+  const inView3 = useInView(ref3, { once: true });
+  const inView4 = useInView(ref4, { once: true });
+  const inView5 = useInView(ref5, { once: true });
+
+  const logoRefs = [ref1, ref2, ref3, ref4, ref5];
+  const logoInViews = [inView1, inView2, inView3, inView4, inView5];
 
   return (
     <section className="w-full flex flex-col items-center justify-center py-24 px-4 sm:px-8 relative overflow-hidden bg-stone-100">

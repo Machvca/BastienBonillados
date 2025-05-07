@@ -90,20 +90,20 @@ function Navbar() {
       >
         <Spotlight />
 
-        <div className="flex flex-col items-center justify-center gap-6 text-5xl ">
+        <div className="flex flex-col items-center justify-center gap-6 text-5xl font-rubik ">
           <Link
             href="/about"
             className="hover:text-stone-200"
             onClick={() => setIsOpen(false)}
           >
-            About Me
+            {t("ABOUT")}
           </Link>
           <Link
             href="/contact"
             className="hover:text-stone-200"
             onClick={() => setIsOpen(false)}
           >
-            Contact
+            {t("CONTACT")}
           </Link>
           <a
             href="https://www.instagram.com/thetintinmickey/"

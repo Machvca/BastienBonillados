@@ -26,9 +26,17 @@ function About() {
 
   const images = [hero2, hero3, hero4];
 
-  // Refs e inViews para cada tarjeta
-  const refs = images.map(() => useRef(null));
-  const inViews = refs.map((ref) => useInView(ref, { once: true }));
+  // Refs e inViews para cada tarjeta (declarados de forma explícita)
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
+
+  const inView1 = useInView(ref1, { once: true });
+  const inView2 = useInView(ref2, { once: true });
+  const inView3 = useInView(ref3, { once: true });
+
+  const refs = [ref1, ref2, ref3];
+  const inViews = [inView1, inView2, inView3];
 
   // Ref y animaciones para bloque de texto
   const textRef = useRef(null);
@@ -44,7 +52,7 @@ function About() {
   return (
     <div className="overflow-hidden bg-stone-100 relative w-full min-h-screen">
       {/* Tarjetas */}
-      <div className="w-full min-h-screen antialiased flex flex-col md:flex-row flex-wrap my-68 md:my-0 gap-56 md:gap-8 items-center justify-center px-4    ">
+      <div className="w-full min-h-screen antialiased flex flex-col md:flex-row flex-wrap my-68 md:my-0 gap-56 md:gap-8 items-center justify-center px-4">
         {images.map((bg, idx) => (
           <motion.div
             key={idx}
@@ -62,7 +70,7 @@ function About() {
             <h1 className="text-2xl md:text-3xl font-bold mb-4 text-shadow-lg">
               {titles[idx]}
             </h1>
-            <p className=" text-center text-sm">{descriptions[idx]}</p>
+            <p className="text-center text-sm">{descriptions[idx]}</p>
           </motion.div>
         ))}
       </div>
