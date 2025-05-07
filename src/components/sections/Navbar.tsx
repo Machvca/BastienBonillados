@@ -82,7 +82,7 @@ function Navbar() {
 
       {/* Menú móvil */}
       <div
-        className={`md:hidden fixed top-0 left-0 w-full h-full text-stone-400 bg-gradient-to-br from-[#621316] via-[#621316] to-[#621316] pb-28 flex flex-col items-center justify-center gap-6 text-4xl transition-all duration-700 ease-in-out ${
+        className={`md:hidden fixed top-0  w-full h-full text-stone-300 bg-gradient-to-br from-[#621316] via-[#621316] to-[#621316]  flex flex-col items-center justify-center gap-6 text-xl transition-all duration-700 ease-in-out ${
           isOpen
             ? "translate-x-0 opacity-100 pointer-events-auto"
             : "-translate-x-full opacity-0 pointer-events-none"
@@ -90,21 +90,21 @@ function Navbar() {
       >
         <Spotlight />
 
-        <div className="flex flex-col items-center justify-center gap-6 text-8xl">
-          <a
-            href="#"
+        <div className="flex flex-col items-center justify-center gap-6 text-5xl ">
+          <Link
+            href="/about"
             className="hover:text-stone-200"
             onClick={() => setIsOpen(false)}
           >
             About Me
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/contact"
             className="hover:text-stone-200"
             onClick={() => setIsOpen(false)}
           >
             Contact
-          </a>
+          </Link>
           <a
             href="https://www.instagram.com/thetintinmickey/"
             target="_blank"

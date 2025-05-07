@@ -8,6 +8,8 @@ import tgvlogo from "../../../public/assets/images/tgvlogo.png";
 import straumannlogo from "../../../public/assets/images/straumannlogo.png";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 import { useTranslations } from "next-intl";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 export function Reviews() {
   const t = useTranslations();
@@ -40,6 +42,19 @@ export function Reviews() {
     },
   ];
 
+  // Creamos refs y estados de visibilidad por separado
+  const logoData = [
+    { src: hpLogo, alt: "HP", className: "h-6 md:h-10" },
+    { src: revolutlogo, alt: "Revolut", className: "h-4 md:h-6" },
+    { src: yamahalogo, alt: "Yamaha", className: "h-4 md:h-6" },
+    { src: tgvlogo, alt: "TGV", className: "h-6 md:h-10" },
+    { src: straumannlogo, alt: "Straumann", className: "h-6 md:h-10" },
+  ];
+
+  // Creamos un arreglo de refs e inViews
+  const logoRefs = logoData.map(() => useRef(null));
+  const logoInViews = logoRefs.map((ref) => useInView(ref, { once: true }));
+
   return (
     <section className="w-full flex flex-col items-center justify-center py-24 px-4 sm:px-8 relative overflow-hidden bg-stone-100">
       <h1 className="text-center text-lg sm:text-2xl md:text-5xl font-rubik font-bold text-[#621316]/90 mb-12 md:py-12">
@@ -47,46 +62,26 @@ export function Reviews() {
       </h1>
 
       <div className="w-full grid grid-cols-3 md:grid-cols-5 px-12 lg:px-48 justify-center md:justify-evenly items-center gap-6 md:gap-10 mb-24">
-        <Image
-          src={hpLogo}
-          alt="HP"
-          width={80}
-          height={80}
-          className="object-contain h-6 md:h-10 w-auto"
-          priority
-        />
-        <Image
-          src={revolutlogo}
-          alt="Revolut"
-          width={100}
-          height={100}
-          className="object-contain h-4 md:h-6 w-auto"
-          priority
-        />
-        <Image
-          src={yamahalogo}
-          alt="Yamaha"
-          width={100}
-          height={100}
-          className="object-contain h-4 md:h-6 w-auto"
-          priority
-        />
-        <Image
-          src={tgvlogo}
-          alt="TGV"
-          width={100}
-          height={100}
-          className="object-contain h-6 md:h-10 w-auto"
-          priority
-        />
-        <Image
-          src={straumannlogo}
-          alt="Straumann"
-          width={150}
-          height={100}
-          className="object-contain h-6 md:h-10 w-auto"
-          priority
-        />
+        {logoData.map((logo, index) => (
+          <motion.div
+            key={index}
+            ref={logoRefs[index]}
+            initial={{ opacity: 0, y: 10 }}
+            animate={logoInViews[index] ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.2, delay: index * 0.0 }}
+            whileHover={{ scale: 1.3 }}
+            className="transition-transform"
+          >
+            <Image
+              src={logo.src}
+              alt={logo.alt}
+              width={100}
+              height={100}
+              className={`object-contain w-auto ${logo.className}`}
+              priority
+            />
+          </motion.div>
+        ))}
       </div>
 
       <div className="w-full max-w-6xl">
