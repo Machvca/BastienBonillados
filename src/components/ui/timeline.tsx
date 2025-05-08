@@ -36,7 +36,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     <div className="w-full bg-transparent  md:px-10" ref={containerRef}>
       <div className="max-w-7xl mx-auto py-10 px-4 md:px-8 lg:px-24 flex items-center justify-center">
         <h1 className="text-4xl md:text-7xl  dark:text-[#621316] max-w-4xl">
-          How to Hired Me
+          How to Hire Me
         </h1>
       </div>
 

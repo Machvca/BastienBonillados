@@ -42,7 +42,7 @@ export default function Home() {
           <Image
             src={hero1}
             alt="Tintin the Magician"
-            className="rounded-2xl object-cover w-full h-auto max-w-md shadow-lg"
+            className="rounded-2xl object-cover w-full h-auto max-w-md shadow-lg mask-radial-at-center mak-radial-from-50% mask-radial-to-40%"
             width={500}
             height={400}
             priority
