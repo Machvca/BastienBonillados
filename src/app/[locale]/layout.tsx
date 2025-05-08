@@ -60,7 +60,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${syne.variable} ${archivo.variable} ${rubik.variable} font-syne antialiased flex flex-col min-h-screen overflow-x-hidden`}
+        className={`${syne.variable} ${archivo.variable} ${rubik.variable} font-syne antialiased cursor-crosshair flex flex-col min-h-screen overflow-x-hidden`}
       >
         <NextIntlClientProvider messages={messages}>
           {children}

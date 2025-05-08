@@ -4,7 +4,6 @@ import { Menu, X } from "lucide-react";
 import Insta from "../../components/Insta";
 import logoBastien from "../../../public/assets/images/logoBastien.png";
 import Image from "next/image";
-
 import { Link } from "@/src/i18n/routing";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "../LanguageSelector";
@@ -26,7 +25,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`fixed  font-rubik top-0 left-0 right-0 z-50 bg-gradient-to-b from-[#432259] to-neutral-100 bg-clip-text transition-colors duration-600 ${
+      className={`fixed  font-rubik top-0 left-0 right-0 z-50 bg-linear-to-b from-[#432259] to-neutral-100 bg-clip-text transition-colors duration-600 ${
         isScrolled ? "bg-stone-900-900/20 shadow-md" : "bg-transparent"
       }`}
     >
@@ -81,7 +80,7 @@ function Navbar() {
 
       {/* Menú móvil */}
       <div
-        className={`md:hidden fixed top-0  w-full h-full text-stone-300 bg-gradient-to-br from-[#621316] via-[#621316] to-[#621316]  flex flex-col items-center justify-center gap-6 text-xl transition-all duration-700 ease-in-out ${
+        className={`md:hidden fixed top-0  w-full h-full text-stone-300 bg-linear-to-br from-[#621316] via-[#621316] to-[#621316]  flex flex-col items-center justify-center gap-6 text-xl transition-all duration-700 ease-in-out ${
           isOpen
             ? "translate-x-0 opacity-100 pointer-events-auto"
             : "-translate-x-full opacity-0 pointer-events-none"

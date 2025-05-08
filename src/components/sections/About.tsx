@@ -88,7 +88,7 @@ function About() {
           ref={textRef}
           initial={{ opacity: 0, y: 40 }}
           animate={inViewText ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.4 }}
+          transition={{ duration: 0.1 }}
           style={{ y }}
           className="absolute top-0 left-0 p-6 sm:p-12 text-left sm:text-right text-white bg-black/40 m-4 sm:ml-12 sm:mt-12 rounded-xl max-w-2xl"
         >
