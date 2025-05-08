@@ -43,7 +43,7 @@ function Hero() {
             src={hero1}
             alt={t("NAME")}
             fill
-            className="rounded-xl object-contain md:object-cover"
+            className="rounded-xl object-contain md:object-cover mask-radial-at-bottom mask-radial-from-45% mask-radial-to-80%"
             priority
           />
         </div>
