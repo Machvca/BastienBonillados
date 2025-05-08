@@ -1,9 +1,7 @@
 "use client";
-
 import Image from "next/image";
 import { Spotlight } from "../../components/ui/spotlight-new";
 import hero1 from "../../../public/assets/images/hero1.jpg";
-import { Spoiler } from "spoiled";
 import { cn } from "@/src/lib/utils";
 import { useTranslations } from "next-intl";
 
@@ -15,7 +13,7 @@ function Hero() {
       <div
         className={cn(
           "absolute inset-0 z-0",
-                     "[background-size:80px_65px]",
+          "[background-size:80px_65px]",
           "[background-image:linear-gradient(to_right,#a3a3a3_1px,transparent_1px),linear-gradient(to_bottom,#573924_1px,transparent_1px)]"
         )}
       />
@@ -29,14 +27,13 @@ function Hero() {
         <p className="text-md md:text-xl text-[#621316] font-rubik text-center mx-6 md:mx-24">
           {t("HERO_DESCRIPTION")}
         </p>
-        <Spoiler>
-          <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-stone-900-300 focus:ring-offset-2 focus:ring-offset-stone-900-50 my-4">
-            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#432259_0%,#f4f4ff_40%,#fbf7ff_100%)]" />
-            <span className="inline-flex h-full w-full cursor-pointer font-rubik items-center justify-center rounded-full bg-transparent px-4 py-1 text-base md:text-lg font-medium text-[#432259] backdrop-blur-3xl">
-              {t("BOOK_NOW")}
-            </span>
-          </button>
-        </Spoiler>
+
+        <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-stone-900-300 focus:ring-offset-2 focus:ring-offset-stone-900-50 my-4">
+          <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#432259_0%,#f4f4ff_40%,#fbf7ff_100%)]" />
+          <span className="inline-flex h-full w-full cursor-pointer font-rubik items-center justify-center rounded-full bg-transparent px-4 py-1 text-base md:text-lg font-medium text-[#432259] backdrop-blur-3xl">
+            {t("BOOK_NOW")}
+          </span>
+        </button>
       </div>
 
       {/* Imagen */}

@@ -4,10 +4,11 @@ import { Menu, X } from "lucide-react";
 import Insta from "../../components/Insta";
 import logoBastien from "../../../public/assets/images/logoBastien.png";
 import Image from "next/image";
-import { Spotlight } from "../../components/ui/spotlight-new";
+
 import { Link } from "@/src/i18n/routing";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "../LanguageSelector";
+import { BackgroundLines } from "../../components/ui/background-lines";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,8 +23,6 @@ function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-
 
   return (
     <nav
@@ -88,34 +87,36 @@ function Navbar() {
             : "-translate-x-full opacity-0 pointer-events-none"
         }`}
       >
-        <Spotlight />
 
-        <div className="flex flex-col items-center justify-center gap-6 text-5xl font-rubik ">
-          <Link
-            href="/about"
-            className="hover:text-stone-200"
-            onClick={() => setIsOpen(false)}
-          >
-            {t("ABOUT")}
-          </Link>
-          <Link
-            href="/contact"
-            className="hover:text-stone-200"
-            onClick={() => setIsOpen(false)}
-          >
-            {t("CONTACT")}
-          </Link>
-          <a
-            href="https://www.instagram.com/thetintinmickey/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-stone-200"
-            onClick={() => setIsOpen(false)}
-          >
-            Instagram
-          </a>
-          <LanguageSwitcher />
+
+          <BackgroundLines>
+        <div className="flex flex-col items-center justify-center gap-6 text-5xl font-rubik mt-92 absolute ml-32">
+            <Link
+              href="/about"
+              className="hover:text-stone-200"
+              onClick={() => setIsOpen(false)}
+            >
+              {t("ABOUT")}
+            </Link>
+            <Link
+              href="/contact"
+              className="hover:text-stone-200"
+              onClick={() => setIsOpen(false)}
+            >
+              {t("CONTACT")}
+            </Link>
+            <a
+              href="https://www.instagram.com/thetintinmickey/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-stone-200"
+              onClick={() => setIsOpen(false)}
+            >
+              Instagram
+            </a>
+            <LanguageSwitcher />
         </div>
+          </BackgroundLines>
       </div>
     </nav>
   );
