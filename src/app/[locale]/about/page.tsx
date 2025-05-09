@@ -41,7 +41,7 @@ export default function Home() {
           <Image
             src={hero1}
             alt="Tintin the Magician"
-            className="rounded-2xl object-cover w-full h-auto max-w-md shadow-2xl hover:scale-110 transition-transform duration-500 ease-in-out"
+            className="rounded-2xl mask-r-from-100% mask-b-from-75% mask-radial-from-100% mask-radial-to-95% hover:mask-none object-cover w-full h-auto max-w-md shadow-2xl hover:scale-110 transition-transform duration-500 ease-in-out"
             width={500}
             height={400}
             priority

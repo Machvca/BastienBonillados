@@ -25,7 +25,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`fixed  font-syne font-medium   mx-24 rounded-4xl top-0 left-0 right-0 z-50  bg-clip-text transition-colors duration-600 ${
+      className={`fixed  font-rubik mx-24 rounded-4xl top-0 left-0 right-0 z-50  bg-clip-text transition-colors duration-600 ${
         isScrolled ? "bg-stone-900/20 shadow-xl" : "bg-transparent"
       }`}
     >
@@ -87,7 +87,7 @@ function Navbar() {
         }`}
       >
         <BackgroundLines>
-          <div className="flex flex-col items-center justify-center gap-6 text-5xl font-rubik mt-92 absolute ml-32">
+          <div className="flex flex-col items-center justify-center gap-6 text-5xl mt-92 absolute ml-32">
             <Link
               href="/about"
               className="hover:text-stone-200"

@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { Spotlight } from "../../components/ui/spotlight-new";
 import hero1 from "../../../public/assets/images/hero1.jpg";
 import { cn } from "@/src/lib/utils";
 import { useTranslations } from "next-intl";
@@ -8,7 +7,6 @@ import Link from "next/link";
 
 function Hero() {
   const t = useTranslations();
-
 
   return (
     <div className="grid grid-cols-1 xl:grid-cols-2  min-h-screen items-center px-4 sm:px-8 md:px-20 py-12 md:py-34 justify-center bg-stone-100 relative w-full overflow-hidden ">
@@ -22,7 +20,6 @@ function Hero() {
 
       {/* Texto */}
       <div className="relative z-10 text-center md:text-center">
-        <Spotlight />
         <h1 className="bg-linear-to-b animate-blurred-fade-in animate-delay-500  from-bastien to-stone-300 bg-clip-text z-9999 py-6 md:pb-10 text-6xl md:text-9xl font-bold  text-transparent md:leading-26">
           {t("NAME")}
         </h1>
@@ -33,7 +30,7 @@ function Hero() {
         <Link
           href={`/contact`}
           role="button"
-          className="relative animate-blurred-fade-in animate-delay-600 hover:animate-jiggle ease-in-out  inline-flex h-10 font-rubik mb-6  items-center justify-center px-4 shadow-2xl border border-[#621316] hover:bg-[#621316] hover:text-stone-200 overflow-hidden rounded-md p-[1px] focus:outline-none focus:ring-2 focus:ring-stone-900-400 focus:ring-offset-2 focus:ring-offset-stone-900-50 mt-8"
+          className="relative  animate-delay-600 animate-jiggle hover:animate-scale ease-in-out  inline-flex h-10 font-rubik mb-6  items-center justify-center px-4 shadow-2xl border border-[#621316] bg-[#621316] hover:bg-stone-200 hover:text-bastien text-stone-200 overflow-hidden rounded-md p-[1px] focus:outline-none focus:ring-2 focus:ring-stone-200 focus:ring-offset-2 focus:ring-offset-stone-900 mt-8"
         >
           {t("BOOK_NOW")}
         </Link>
