@@ -23,17 +23,17 @@ function Hero() {
       {/* Texto */}
       <div className="relative z-10 text-center md:text-center">
         <Spotlight />
-        <h1 className="bg-linear-to-b animate-blurred-fade-in animate-delay-250  from-bastien to-stone-300 bg-clip-text z-9999 py-6 md:pb-10 text-6xl md:text-9xl font-bold  text-transparent md:leading-26">
+        <h1 className="bg-linear-to-b animate-blurred-fade-in animate-delay-500  from-bastien to-stone-300 bg-clip-text z-9999 py-6 md:pb-10 text-6xl md:text-9xl font-bold  text-transparent md:leading-26">
           {t("NAME")}
         </h1>
-        <p className="text-md md:text-xl text-[#621316] font-rubik text-center mx-6 md:mx-24">
+        <p className="text-md md:text-xl text-[#621316] animate-blurred-fade-in animate-delay-100 font-rubik text-center mx-6 md:mx-24">
           {t("HERO_DESCRIPTION")}
         </p>
 
         <Link
           href={`/contact`}
           role="button"
-          className="relative hover:animate-jiggle animate-delay-900 inline-flex h-10 font-rubik mb-6  items-center justify-center px-4 shadow-2xl border border-[#621316] hover:bg-[#621316] hover:text-stone-200 overflow-hidden rounded-md p-[1px] focus:outline-none focus:ring-2 focus:ring-stone-900-400 focus:ring-offset-2 focus:ring-offset-stone-900-50 mt-8"
+          className="relative animate-blurred-fade-in animate-delay-600 hover:animate-jiggle ease-in-out  inline-flex h-10 font-rubik mb-6  items-center justify-center px-4 shadow-2xl border border-[#621316] hover:bg-[#621316] hover:text-stone-200 overflow-hidden rounded-md p-[1px] focus:outline-none focus:ring-2 focus:ring-stone-900-400 focus:ring-offset-2 focus:ring-offset-stone-900-50 mt-8"
         >
           {t("BOOK_NOW")}
         </Link>

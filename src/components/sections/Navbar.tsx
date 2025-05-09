@@ -25,8 +25,8 @@ function Navbar() {
 
   return (
     <nav
-      className={`fixed  font-rubik top-0 left-0 right-0 z-50 bg-linear-to-b from-[#432259] to-neutral-100 bg-clip-text transition-colors duration-600 ${
-        isScrolled ? "bg-stone-900-900/20 shadow-md" : "bg-transparent"
+      className={`fixed  font-syne font-medium   mx-24 rounded-4xl top-0 left-0 right-0 z-50  bg-clip-text transition-colors duration-600 ${
+        isScrolled ? "bg-stone-900/20 shadow-xl" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -52,16 +52,16 @@ function Navbar() {
         </button>
 
         {/* Menú de navegación (escritorio) */}
-        <div className="hidden md:flex space-x-6 text-xl ">
+        <div className="hidden md:flex space-x-5 text-2xl ">
           <Link
             href="/about"
-            className="text-[#621316] hover:text-[#621316]/20"
+            className="text-[#621316] hover:text-[#621316]/60"
           >
             {t("ABOUT")}
           </Link>
           <Link
             href="/contact"
-            className="text-[#621316] hover:text-[#621316]/20"
+            className="text-[#621316] hover:text-[#621316]/60 "
           >
             {t("CONTACT")}
           </Link>
@@ -86,10 +86,8 @@ function Navbar() {
             : "-translate-x-full opacity-0 pointer-events-none"
         }`}
       >
-
-
-          <BackgroundLines>
-        <div className="flex flex-col items-center justify-center gap-6 text-5xl font-rubik mt-92 absolute ml-32">
+        <BackgroundLines>
+          <div className="flex flex-col items-center justify-center gap-6 text-5xl font-rubik mt-92 absolute ml-32">
             <Link
               href="/about"
               className="hover:text-stone-200"
@@ -114,8 +112,8 @@ function Navbar() {
               Instagram
             </a>
             <LanguageSwitcher />
-        </div>
-          </BackgroundLines>
+          </div>
+        </BackgroundLines>
       </div>
     </nav>
   );

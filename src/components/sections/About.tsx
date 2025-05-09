@@ -52,7 +52,7 @@ function About() {
   return (
     <div className="overflow-hidden bg-stone-100 relative w-full min-h-screen">
       {/* Tarjetas */}
-      <div className="w-full min-h-screen antialiased flex flex-col md:flex-row flex-wrap my-68 md:my-0 gap-56 md:gap-8 items-center justify-center px-4">
+      <div className="w-full transition min-h-screen antialiased flex flex-col md:flex-row flex-wrap my-68 md:my-0 gap-56 md:gap-8 items-center justify-center px-4">
         {images.map((bg, idx) => (
           <motion.div
             key={idx}
@@ -64,13 +64,15 @@ function About() {
               scale: 1.05,
               boxShadow: "0 12px 24px rgba(0, 0, 0, .6)",
             }}
-            className="flex flex-col items-center justify-center rounded-2xl text-center px-4 sm:px-6 md:px-8 w-full md:w-[30%] h-[400px] bg-cover bg-center text-white shadow-lg mb-12 -mt-64"
+            className="flex flex-col items-center justify-center group-hover:scale-125 rounded-2xl text-center px-4 sm:px-6 md:px-8 w-full md:w-[30%] h-[400px] bg-cover bg-center text-white shadow-lg mb-12 -mt-64"
             style={{ backgroundImage: `url(${bg.src})` }}
           >
             <h1 className="text-2xl md:text-3xl font-bold mb-4 text-shadow-lg">
               {titles[idx]}
             </h1>
-            <p className="text-center text-sm">{descriptions[idx]}</p>
+            <p className="text-center hover:scale-105 text-sm">
+              {descriptions[idx]}
+            </p>
           </motion.div>
         ))}
       </div>

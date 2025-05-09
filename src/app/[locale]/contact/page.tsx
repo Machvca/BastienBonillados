@@ -49,7 +49,7 @@ export default function Home() {
     <main className="bg-gradient-to-br from-bastien/10 via bastien/40 to-bastien/80  min-h-screen flex flex-col">
       <Navbar />
 
-      <section className="flex flex-col items-center justify-center px-4 py-24 md:px-8  font-rubik">
+      <section className="flex flex-col items-center justify-center px-4 py-48 md:px-8  font-rubik animate-fade-in-up">
         <div className="w-full max-w-2xl bg-[#feefef]  rounded-2xl shadow-xl p-8 border border-gray-200">
           <h2 className="text-3xl font-medium mb-6 text-[#621316] text-center font-syne">
             Contact Me
