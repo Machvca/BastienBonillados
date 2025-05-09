@@ -8,12 +8,12 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <main className="bg-stone-000 min-h-screen flex flex-col">
+    <main className="bg-stone-000 min-h-screen flex flex-col bg-gradient-to-br from-bastien/10 via bastien/40 to-bastien/80">
       <Navbar />
 
       <section className="flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-20 my-20 md:my-40 gap-10 ">
         <motion.p
-          className="text-base sm:text-lg md:text-xl lg:text-xl text-left font-rubik max-w-2xl text-neutral-800 "
+          className="text-base sm:text-lg md:text-xl lg:text-xl text-left font-rubik max-w-2xl text-bastien "
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

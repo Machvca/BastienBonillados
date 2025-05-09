@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@plugin '@midudev/tailwind-animations';
+
 
 @theme inline {
   --animate-scroll: scroll var(--animation-duration, 40s)
@@ -7,6 +9,8 @@
   --font-archivo: var(--font-archivo);
   --font-syne: var(--font-syne);
   --font-rubik: var(--font-rubik);
+
+  --color-bastien: #621316;
 
   @keyframes scroll {
     to {

@@ -46,17 +46,17 @@ export default function Home() {
   // }
 
   return (
-    <main className="bg-transparent min-h-screen flex flex-col">
+    <main className="bg-gradient-to-br from-bastien/10 via bastien/40 to-bastien/80  min-h-screen flex flex-col">
       <Navbar />
 
-      <section className="flex flex-col items-center justify-center px-4 py-24 md:px-8 bg-white">
-        <div className="w-full max-w-2xl bg-white rounded-2xl shadow-xl p-8 border border-gray-200">
-          <h2 className="text-3xl font-bold mb-6 text-stone-900 text-center font-rubik">
+      <section className="flex flex-col items-center justify-center px-4 py-24 md:px-8  font-rubik">
+        <div className="w-full max-w-2xl bg-[#feefef]  rounded-2xl shadow-xl p-8 border border-gray-200">
+          <h2 className="text-3xl font-medium mb-6 text-[#621316] text-center font-syne">
             Contact Me
           </h2>
-          <p className="text-stone-700 text-base mb-8 text-center">
-            Please leave a short explanation of the event you&apos;d like to hire me
-            for, including any relevant details. This will help me check
+          <p className="text-stone-700 text-base mb-8 text-center font-rubik">
+            Please leave a short explanation of the event you&apos;d like to
+            hire me for, including any relevant details. This will help me check
             availability and better understand your needs. I’ll get back to you
             as soon as possible!
           </p>
@@ -74,7 +74,7 @@ export default function Home() {
                 id="email"
                 required
                 placeholder="youremail@gmail.com"
-                className="w-full p-4 text-base text-stone-900 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-stone-500 invalid:border-red-500 invalid:focus:ring-red-500"
+                className="w-full p-4 text-base text-stone-900 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-stone-500 invalid:border-red-200 invalid:focus:ring-red-900"
               />
             </div>
 
@@ -91,7 +91,7 @@ export default function Home() {
                 id="subject"
                 required
                 placeholder="Birthday party, corporate event, etc."
-                className="w-full p-4 text-base text-stone-900 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-stone-500 invalid:border-red-500 invalid:focus:ring-red-500"
+                className="w-full p-4 text-base text-stone-900 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-stone-500 invalid:border-red-200 invalid:focus:ring-red-900"
               />
             </div>
 
@@ -108,13 +108,13 @@ export default function Home() {
                 rows={6}
                 required
                 placeholder="Tell me about your event and preferred date/time..."
-                className="w-full p-4 text-base text-stone-900 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-stone-500 invalid:border-red-500 invalid:focus:ring-red-500"
+                className="w-full p-4 text-base text-stone-900 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-stone-500 invalid:border-red-200 invalid:focus:ring-red-900"
               />
             </div>
 
             <button
               type="submit"
-              className="w-full bg-[#621316] text-white font-semibold py-3 rounded-xl hover:bg-[#7a1a1f] transition duration-300"
+              className="w-full bg-[#621316]/20 shadow-2xl text-[#621316] font-medium py-3 rounded-xl hover:bg-[#621316] hover:text-stone-100 transition duration-300"
             >
               Send Message
             </button>
