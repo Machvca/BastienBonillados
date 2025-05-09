@@ -5,61 +5,66 @@ import Navbar from "@/src/components/sections/Navbar";
 import { useState } from "react";
 
 export default function Home() {
+  const [emailSubmitted, setEmailSubmitted] = useState(false);
 
-    const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-      e.preventDefault();
-
-      const form = e.target as HTMLFormElement & {
-        email: { value: string };
-        subject: { value: string };
-        message: { value: string };
-      };
-
-      const data = {
-        email: form.email.value,
-        subject: form.subject.value,
-        message: form.message.value,
-      };
-
-      const JSONdata = JSON.stringify(data);
-      const endpoint = "/api/send";
-
-      const options = {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSONdata,
-      };
-
-      const response = await fetch(endpoint, options);
-
-      if (response.status === 200) {
-        console.log("Message sent.");
-        setEmailSubmitted(true);
-      }
+    const form = e.target as HTMLFormElement & {
+      email: { value: string };
+      subject: { value: string };
+      message: { value: string };
     };
 
+    const data = {
+      email: form.email.value,
+      subject: form.subject.value,
+      message: form.message.value,
+    };
 
+    const JSONdata = JSON.stringify(data);
+    const endpoint = "/api/send";
 
-// function send() {
-//    sendEmail()
-// }
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSONdata,
+    };
+
+    const response = await fetch(endpoint, options);
+
+    if (response.status === 200) {
+      console.log("Message sent.");
+      setEmailSubmitted(true);
+    }
+  };
+
+  // function send() {
+  //    sendEmail()
+  // }
 
   return (
     <main className="bg-transparent min-h-screen flex flex-col">
       <Navbar />
 
-      <section className="flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-20 my-20 md:my-40 gap-10">
-        {/* <form action={send}> */}
-          {/* <button type="submit">send</button> */}
-          <form className="flex flex-col" onSubmit={handleSubmit}>
-            <div className="mb-6">
+      <section className="flex flex-col items-center justify-center px-4 py-24 md:px-8 bg-white">
+        <div className="w-full max-w-2xl bg-white rounded-2xl shadow-xl p-8 border border-gray-200">
+          <h2 className="text-3xl font-bold mb-6 text-stone-900 text-center font-rubik">
+            Contact Me
+          </h2>
+          <p className="text-stone-700 text-base mb-8 text-center">
+            Please leave a short explanation of the event you&apos;d like to hire me
+            for, including any relevant details. This will help me check
+            availability and better understand your needs. I’ll get back to you
+            as soon as possible!
+          </p>
+          <form className="space-y-6" onSubmit={handleSubmit}>
+            <div>
               <label
                 htmlFor="email"
-                className="text-stone-900 block mb-2 text-sm font-medium"
+                className="block mb-2 text-base font-medium text-stone-900"
               >
                 Your Email
               </label>
@@ -68,15 +73,15 @@ export default function Home() {
                 type="email"
                 id="email"
                 required
-                className=" border border-slate-500 placeholder-indigo-200 text-gray-900 text-sm rounded-lg block w-full p-2.53"
-                placeholder="jorge@googleeeeeeee.com"
+                placeholder="youremail@gmail.com"
+                className="w-full p-4 text-base text-stone-900 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-stone-500 invalid:border-red-500 invalid:focus:ring-red-500"
               />
             </div>
 
             <div>
               <label
-                htmlFor="Subject"
-                className="text-stone-900 block text-sm mb-2 font-medium"
+                htmlFor="subject"
+                className="block mb-2 text-base font-medium text-stone-900"
               >
                 Subject
               </label>
@@ -85,42 +90,45 @@ export default function Home() {
                 type="text"
                 id="subject"
                 required
-                className=" border mb-2 border-slate-500 placeholder-indigo-900 text-gray-300 text-sm rounded-lg block w-full p-2.53"
-                placeholder="hola"
+                placeholder="Birthday party, corporate event, etc."
+                className="w-full p-4 text-base text-stone-900 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-stone-500 invalid:border-red-500 invalid:focus:ring-red-500"
               />
             </div>
-            <div className="mb-6">
+
+            <div>
               <label
                 htmlFor="message"
-                className="text-stone-900 block text-sm mb-2 font-medium"
+                className="block mb-2 text-base font-medium text-stone-900"
               >
                 Message
               </label>
               <textarea
                 name="message"
                 id="message"
-                className=" border border-slate-500 placeholder-indigo-900 text-stone-900 text-sm rounded-lg block w-full p-2.53"
-                placeholder="Leave your message here!"
+                rows={6}
+                required
+                placeholder="Tell me about your event and preferred date/time..."
+                className="w-full p-4 text-base text-stone-900 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-stone-500 invalid:border-red-500 invalid:focus:ring-red-500"
               />
             </div>
+
             <button
               type="submit"
-              className="bg-stone-500    text-stone-900 font-medium py-2.5 px-5 rounded-lg w-full"
+              className="w-full bg-[#621316] text-white font-semibold py-3 rounded-xl hover:bg-[#7a1a1f] transition duration-300"
             >
               Send Message
             </button>
+
             {emailSubmitted && (
-              <p className="text-green-500 text-sm mt-2">
+              <p className="text-green-500 text-sm mt-2 text-center">
                 Email sent successfully!
               </p>
             )}
           </form>
-        {/* </form> */}
+        </div>
       </section>
 
       <Footer />
     </main>
   );
 }
-
-

@@ -10,7 +10,7 @@ export default function Footer() {
   const t = useTranslations();
 
   return (
-    <footer className="bottom-0 w-full p-4 text-stone-900-900 text-center bg-stone-100 mt-auto backdrop-blur-md">
+    <footer className="bottom-0 w-full p-4 text-stone-900-900 text-center bg-transparent mt-auto backdrop-blur-md">
       <div className="grid grid-cols-3 items-center justify-items-center max-w-7xl mx-auto px-4">
         <a
           href="https://www.instagram.com/thetintinmickey/"
