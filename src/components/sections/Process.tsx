@@ -13,7 +13,7 @@ export default function TimelineDemo() {
       title: t("TIMELINE_TITLE_1"),
       content: (
         <div className="grid grid-cols-2 gap-12 mb-12">
-          <p className="text-[#621316]/90 text-xs md:text-2xl font-normal mb-8">
+          <p className="text-magic-lavender/90 text-xs md:text-2xl font-normal mb-8">
             {t("TIMELINE_DESC_1")}
           </p>
           <div className="grid grid-cols-2 gap-4"></div>
@@ -24,7 +24,7 @@ export default function TimelineDemo() {
       title: t("TIMELINE_TITLE_2"),
       content: (
         <div className="mb-12">
-          <p className="text-[#621316]/90 text-xs md:text-2xl font-normal mb-8">
+          <p className="text-magic-lavender/90 text-xs md:text-2xl font-normal mb-8">
             {t("TIMELINE_DESC_2")}
           </p>
           <div className="grid grid-cols-2 gap-4"></div>
@@ -35,7 +35,7 @@ export default function TimelineDemo() {
       title: t("TIMELINE_TITLE_3"),
       content: (
         <div className="grid grid-cols-2 gap-12 mb-12">
-          <p className="text-[#621316]/90 text-xs md:text-2xl font-normal mb-8">
+          <p className="text-magic-lavender/90 text-xs md:text-2xl font-normal mb-8">
             {t("TIMELINE_DESC_3")}
           </p>
           <div className="grid grid-cols-2 gap-4"></div>
@@ -46,7 +46,7 @@ export default function TimelineDemo() {
       title: t("TIMELINE_TITLE_4"),
       content: (
         <div className="mb-12">
-          <p className="text-[#621316]/90 text-xs md:text-2xl font-normal mb-8">
+          <p className="text-magic-lavender/90 text-xs md:text-2xl font-normal mb-8">
             {t("TIMELINE_DESC_4")}
           </p>
           <div className="grid grid-cols-2 gap-4"></div>

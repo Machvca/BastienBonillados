@@ -67,8 +67,8 @@ export function Reviews() {
   const logoInViews = [inView1, inView2, inView3, inView4, inView5];
 
   return (
-    <section className="w-full flex flex-col items-center justify-center py-24 px-4 sm:px-8 relative overflow-hidden bg-stone-100">
-      <h1 className="text-center text-lg sm:text-2xl md:text-5xl font-rubik font-bold text-[#621316]/90 mb-12 md:py-12">
+    <section className="w-full flex flex-col items-center justify-center py-24 px-4 sm:px-8 relative overflow-hidden ">
+      <h1 className="text-center text-lg sm:text-2xl md:text-5xl font-rubik font-bold text-magic-lavender/90 mb-12 md:py-12">
         {t("REVIEWS_TITLE")}
       </h1>
 

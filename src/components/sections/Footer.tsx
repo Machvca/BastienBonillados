@@ -20,18 +20,18 @@ export default function Footer() {
         >
           <Insta
             stroke="none"
-            fill="#621316"
+            fill="#E6E6FA"
             className="drop-shadow-lg drop-shadow-white/50"
           />
         </a>
-        <h1 className="text-sm text-[#621316]">
+        <h1 className="text-sm text-magic-lavender">
           © {new Date().getFullYear()} {t("FOOTER_COPYRIGHT")}
         </h1>
         <Link href="/">
           <Image
             src={logoBastien}
             alt="Logo"
-            className="w-14 h-16 cursor-pointer text-[#621316]"
+            className="w-12 h-14 cursor-pointer"
           />
         </Link>
       </div>

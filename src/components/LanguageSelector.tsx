@@ -75,7 +75,7 @@ export default function LanguageSelector({
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={toggleDropdown}
-        className="flex items-center space-x-1 text-sm font-rubik text-[#621316] hover:bg-stone-300 rounded-md transition-colors duration-150 ease-in-out"
+        className="flex items-center space-x-1 text-sm font-rubik text-magic-lavender hover:bg-stone-300 rounded-md transition-colors duration-150 ease-in-out"
         aria-haspopup="true"
         aria-expanded={isOpen}
       >
@@ -84,7 +84,7 @@ export default function LanguageSelector({
           {selectedLanguage.name}
         </span> */}
         <IoChevronDownOutline
-          className={`size-4 ${mobile ? "text-black" : "text-[#621316]"}`}
+          className={`size-4 ${mobile ? "text-black" : "text-magic-lavender"}`}
         />
       </button>
 
@@ -97,11 +97,11 @@ export default function LanguageSelector({
             <button
               key={language.code}
               onClick={() => selectLanguage(language)}
-              className="flex items-center px-4 py-2 text-sm text-[#621316] hover:bg-stone-300 w-full text-left"
+              className="flex items-center px-4 py-2 text-sm text-magic-lavender hover:bg-magic-gold w-full text-left"
               role="menuitem"
             >
               <span className="mr-2 text-2xl">{language.flag}</span>
-              <span className="text-[#621316]">{language.name}</span>
+              <span className="text-magic-lavender">{language.name}</span>
             </button>
           ))}
         </div>

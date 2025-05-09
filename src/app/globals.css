@@ -12,6 +12,12 @@
 
   --color-bastien: #621316;
 
+     --color-magic-dark: #1d0633;
+      --color-magic-gold: #D4AF37;
+      --color-magic-night: #120F3F;
+      --color-magic-lavender: #E6E6FA;
+      --color-magic-pink: #A945C7;
+
   @keyframes scroll {
     to {
 transform: translate(calc(-50% - 0.5rem));

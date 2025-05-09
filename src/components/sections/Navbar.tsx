@@ -27,7 +27,9 @@ function Navbar() {
       {/* NAVBAR DESKTOP */}
       <nav
         className={`fixed top-0 left-0 right-0 z-50 font-rubik transition-colors duration-600 ${
-          isScrolled ? "bg-stone-900/20 shadow-xl" : "bg-transparent"
+          isScrolled
+            ? "bg-magic-dark/10  mx-24 rounded-4xl shadow-xl"
+            : "bg-transparent"
         }`}
       >
         <div className="hidden md:flex container mx-auto px-4 py-4 justify-between items-center">
@@ -41,16 +43,16 @@ function Navbar() {
           </Link>
 
           {/* Links */}
-          <div className="flex space-x-5 text-2xl">
+          <div className="flex space-x-5 text-2xl text-magic-lavender">
             <Link
               href="/about"
-              className="text-[#621316] hover:text-[#621316]/60"
+              className="text-magic-lavender hover:text-magic-lavender/80 "
             >
               {t("ABOUT")}
             </Link>
             <Link
               href="/contact"
-              className="text-[#621316] hover:text-[#621316]/60"
+              className="text-magic-lavender hover:text-magic-lavender/80   "
             >
               {t("CONTACT")}
             </Link>
@@ -60,7 +62,7 @@ function Navbar() {
               rel="noopener noreferrer"
               className="hover:text-stone-900-700 cursor-pointer"
             >
-              <Insta stroke="none" fill="#621316" />
+              <Insta stroke="none" fill="#E6E6FA" />
             </a>
             <LanguageSwitcher />
           </div>
@@ -75,13 +77,13 @@ function Navbar() {
         {isOpen ? (
           <X size={40} className="text-stone-400" />
         ) : (
-          <Menu size={40} className="text-[#621316]" />
+          <Menu size={40} className="text-magic-lavender" />
         )}
       </button>
 
       {/* MENÚ MÓVIL */}
       <div
-        className={`md:hidden fixed inset-0 z-40 text-stone-300 bg-gradient-to-br from-[#621316] via-[#621316] to-[#621316] flex flex-col items-center justify-center gap-10 text-2xl transition-all duration-700 ease-in-out ${
+        className={`md:hidden fixed inset-0 z-40 text-stone-300 bg-gradient-to-br from-magic-lavender via-magic-lavender to-magic-lavender flex flex-col items-center justify-center gap-10 text-2xl transition-all duration-700 ease-in-out ${
           isOpen
             ? "translate-x-0 opacity-100 pointer-events-auto"
             : "-translate-x-full opacity-0 pointer-events-none"

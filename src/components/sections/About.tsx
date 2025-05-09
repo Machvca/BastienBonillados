@@ -50,7 +50,7 @@ function About() {
   const y = useTransform(scrollYProgress, [0, 1], [50, -50]);
 
   return (
-    <div className="overflow-hidden bg-stone-100 relative w-full min-h-screen">
+    <div className="overflow-hidden  relative w-full min-h-screen">
       {/* Tarjetas */}
       <div className="w-full transition min-h-screen antialiased flex flex-col md:flex-row flex-wrap my-68 md:my-0 gap-56 md:gap-8 items-center justify-center px-4">
         {images.map((bg, idx) => (
@@ -92,7 +92,7 @@ function About() {
           animate={inViewText ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.1 }}
           style={{ y }}
-          className="absolute top-0 left-0 p-6 sm:p-12 text-left sm:text-right text-white bg-black/40 m-4 sm:ml-12 sm:mt-12 rounded-xl max-w-2xl"
+          className="absolute top-0 left-0 p-6 sm:p-12 text-left sm:text-right text-white bg-black/20 m-4 sm:ml-12 sm:mt-12 rounded-xl max-w-2xl"
         >
           <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold">
             &quot;Bastien Bonilla&quot;

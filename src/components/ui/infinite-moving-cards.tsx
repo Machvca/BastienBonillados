@@ -69,7 +69,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item) => (
           <li
-            className="relative w-[350px] max-w-full shrink-0 rounded-2xl border-separate bg-[#621316]/20 px-8 py-6 md:w-[450px]"
+            className="relative w-[350px] max-w-full shrink-0 rounded-2xl shadow-lg shadow-magic-lavender/5 border-separate bg-magic-lavender/10 px-8 py-6 md:w-[450px]"
             key={`${item.name}-${item.title}`}
           >
             <blockquote>
@@ -77,15 +77,15 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none pointer-events-none absolute -top-0.5 -left-0.5 -z-1 h-[calc(100%+4px)] w-[calc(100%+4px)]"
               ></div>
-              <span className="relative z-20 text-sm leading-[1.6] font-normal text-stone-900 ">
+              <span className="relative z-20 text-md leading-[1.6] font-bold text-magic-gold text- ">
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
-                  <span className="text-sm leading-[1.6] font-normal text-[#621316]">
+                  <span className="text-sm leading-[1.6] font-medium text-magic-gold">
                     {item.name}
                   </span>
-                  <span className="text-sm leading-[1.6] font-normal text-[#621316]">
+                  <span className="text-sm leading-[1.6] font-medium text-magic-gold">
                     {item.title}
                   </span>
                 </span>
